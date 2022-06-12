@@ -52,8 +52,8 @@
         <div class="navbar-menu-wrapper d-flex align-items-top">
           <ul class="navbar-nav">
             <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-              <h1 class="welcome-text text-white fw-bold">All Employees <span class="text-white fw-bold">overview</span></h1>
-              <h3 class="welcome-sub-text">Your insights on your employees this week</h3>
+              <h1 class="welcome-text text-white fw-bold"><span class="text-white fw-bold">Employee Salaries </span></h1>
+              <h3 class="welcome-sub-text">Your insights on your employee salaries</h3>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
@@ -511,13 +511,13 @@
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a style="font-size: 20px; border-right: none;" class="nav-link text-white fw-bold active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Leaves Overview</a>
+                      <a style="font-size: 20px; border-right: none;" class="nav-link text-white fw-bold active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Salaries Overview</a>
                     </li>
                     
                   </ul>
                   <div>
                     <div>
-                      <button  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="btn btn-primary text-white btn-lg"><i class="mdi mdi-account-plus"></i> Add New Leave</button>
+                      <button  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="btn btn-primary text-white btn-lg"><i class="mdi mdi-account-plus"></i> Add Salary </button>
                     </div>
                   </div>
                 </div>
@@ -561,8 +561,8 @@
                                     
                                     
                                   <div>
-                                    <p class="text-small mb-2">Annual Leaves</p>
-                                    <h4 class="mb-0 fw-bold circle-progress-color">2689</h4>
+                                    <p class="text-small mb-2">Total Salaries</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">20,689,256</h4>
                                   </div>
                                 </div>
                               </div>
@@ -603,8 +603,8 @@
                                     
                                     
                                   <div>
-                                    <p class="text-small mb-2">Medical Leaves</p>
-                                    <h4 class="mb-0 fw-bold circle-progress-color">950</h4>
+                                    <p class="text-small mb-2">Monthly Salaries</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">1,056,256</h4>
                                   </div>
                                 </div>
                               </div>
@@ -644,8 +644,8 @@
                                     
                                     
                                   <div>
-                                    <p class="text-small mb-2">other Leaves</p>
-                                    <h4 class="mb-0 fw-bold circle-progress-color">698</h4>
+                                    <p class="text-small mb-2">Taxes from Salaries</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">689,256</h4>
                                   </div>
                                 </div>
                               </div>
@@ -683,8 +683,8 @@
                                     </defs>
                                 </svg> 
                                   <div>
-                                    <p class="text-small mb-2">Casual Leaves</p>
-                                    <h4 class="mb-0 fw-bold circle-progress-color">12</h4>
+                                    <p class="text-small mb-2">Remaining Salaries</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">20,689,256</h4>
                                   </div>
                                 </div>
                               </div>
@@ -723,8 +723,8 @@
                                     </defs>
                                 </svg>
                                   <div>
-                                    <p class="text-small mb-2">Remaining Leaves</p>
-                                    <h4 class="mb-0 fw-bold circle-progress-color">8975</h4>
+                                    <p class="text-small mb-2">Extra Hours Bonus</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">10,975</h4>
                                   </div>
                                 </div>
                               </div>
@@ -736,19 +736,19 @@
                       <div class="col-12">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Leave List</h4>
+                            <h4 class="card-title">Employee Salary List</h4>
                             <div class="row">
                               <div class="col-12">
                                 <div class="table-responsive">
                                   <table id="order-listing" class="table">
                                     <thead>
                                       <tr class="bg-dark text-white">
-                                          <th>#</th>
-                                          <th>Leave Type</th>
-                                          <th>From</th>
-                                          <th>To</th>
-                                          <th>No of Days</th>
-                                          <th>Reason</th>
+                                          <th>ID</th>
+                                          <th>email</th>
+                                          <th>Name</th>
+                                          <th>Country</th>
+                                          <th>Salary</th>
+                                          <th>Role</th>
                                           <th>Status</th>
                                           <th>Actions</th>
                                       </tr>
@@ -756,11 +756,11 @@
                                     <tbody>
                                       <tr>
                                           <td>1</td>
-                                          <td>Medical</td>
+                                          <td>alane@gmail.com</td>
                                           <td>Alane Johan</td>
                                           <td>Cameroun</td>
                                           <td>950,000</td>
-                                          <td>693032040</td>
+                                          <td>UI / UX Designer</td>
                                           <td>
                                             <label class="badge rounded-btn badge-info">On hold</label>
                                           </td>
@@ -775,11 +775,11 @@
                                       </tr>
                                       <tr>
                                           <td>2</td>
-                                          <td>other</td>
+                                          <td>ruth@gmail.com</td>
                                           <td>Ruth</td>
                                           <td>Brazil</td>
                                           <td>250,000</td>
-                                          <td>693056040</td>
+                                          <td>Creative Designer</td>
                                           <td>
                                             <label class="badge rounded-btn badge-danger">Pending</label>
                                           </td>
@@ -794,13 +794,13 @@
                                       </tr>
                                       <tr>
                                           <td>3</td>
-                                          <td>other</td>
+                                          <td>Meli@gmail.com</td>
                                           <td>Meli</td>
                                           <td>Tokyo</td>
                                           <td>150,000</td>
-                                          <td>678032040</td>
+                                          <td>Network Admin</td>
                                           <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                            <label class="badge rounded-btn badge-success">Paid</label>
                                           </td>
                                           <td class="text-right">
                                             <a class="btn btn-dark" href="pages/samples/profile.html">
@@ -813,11 +813,11 @@
                                       </tr>
                                       <tr>
                                           <td>4</td>
-                                          <td>Medical  </td>
+                                          <td>gachette@gmail.com</td>
                                           <td>la Gachette</td>
                                           <td>Netherland</td>
                                           <td>780,000</td>
-                                          <td>689032040</td>
+                                          <td>Security Expert</td>
                                           <td>
                                             <label class="badge rounded-btn badge-warning">Open</label>
                                           </td>
@@ -832,13 +832,13 @@
                                       </tr>
                                       <tr>
                                           <td>5</td>
-                                          <td>casual</td>
+                                          <td>herdrick@gmail.com</td>
                                           <td>Herdrick</td>
                                           <td>Indonesia</td>
                                           <td>897,000</td>
-                                          <td>656032040</td>
+                                          <td>full stack dev</td>
                                           <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                            <label class="badge rounded-btn badge-success">paid</label>
                                           </td>
                                           <td class="text-right">
                                             <a class="btn btn-dark" href="pages/samples/profile.html">
@@ -851,11 +851,11 @@
                                       </tr>
                                       <tr>
                                           <td>6</td>
-                                          <td>other</td>
+                                          <td>stella@gmail.com</td>
                                           <td>Stella</td>
                                           <td>Japan</td>
                                           <td>895,100</td>
-                                          <td>693032040</td>
+                                          <td>Accountant</td>
                                           <td>
                                             <label class="badge rounded-btn badge-info">On hold</label>
                                           </td>
@@ -870,13 +870,13 @@
                                       </tr>
                                       <tr>
                                           <td>7</td>
-                                          <td>Medical</td>
+                                          <td>Jaqueline@gmail.com</td>
                                           <td>Jaqueline</td>
                                           <td>Germany</td>
                                           <td>150,000</td>
-                                          <td>693032040</td>
+                                          <td>Product Designer</td>
                                           <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                            <label class="badge rounded-btn badge-success">paid</label>
                                           </td>
                                           <td class="text-right">
                                             <a class="btn btn-dark" href="pages/samples/profile.html">
@@ -889,11 +889,11 @@
                                       </tr>
                                       <tr>
                                           <td>8</td>
-                                          <td>Medical</td>
+                                          <td>tim@gmail.com</td>
                                           <td>Tim</td>
                                           <td>Italy</td>
                                           <td>150,000</td>
-                                          <td>693032040</td>
+                                          <td></td>
                                           <td>
                                             <label class="badge rounded-btn badge-warning">Open</label>
                                           </td>
@@ -908,13 +908,13 @@
                                       </tr>
                                       <tr>
                                           <td>9</td>
-                                          <td>casual</td>
+                                          <td>john@gmail.com</td>
                                           <td>John</td>
                                           <td>Tokyo</td>
                                           <td>150,000</td>
-                                          <td>693032040</td>
+                                          <td>Frontend Dev</td>
                                           <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                            <label class="badge rounded-btn badge-success">paid</label>
                                           </td>
                                           <td class="text-right">
                                             <a class="btn btn-dark" href="pages/samples/profile.html">
@@ -927,11 +927,31 @@
                                       </tr>
                                       <tr>
                                         <td>10</td>
-                                        <td>Medical casual other</td>
+                                        <td>Ndah@gmail.vom</td>
+                                        <td>ndah</td>
+                                        <td>Cameroun</td>
+                                        <td>950,000</td>
+                                        <td>Backend Dev</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-info">On hold</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11</td>
+                                        <td>alane@gmail.com</td>
                                         <td>Alane Johan</td>
                                         <td>Cameroun</td>
                                         <td>950,000</td>
-                                        <td>693032040</td>
+                                        <td>UI / UX Designer</td>
                                         <td>
                                           <label class="badge rounded-btn badge-info">On hold</label>
                                         </td>
@@ -945,12 +965,164 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                      <td>1</td>
-                                      <td>Medical</td>
-                                      <td>Alane Johan</td>
+                                        <td>12</td>
+                                        <td>ruth@gmail.com</td>
+                                        <td>Ruth</td>
+                                        <td>Brazil</td>
+                                        <td>250,000</td>
+                                        <td>Creative Designer</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-danger">Pending</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Meli@gmail.com</td>
+                                        <td>Meli</td>
+                                        <td>Tokyo</td>
+                                        <td>150,000</td>
+                                        <td>Network Admin</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-success">Paid</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>gachette@gmail.com</td>
+                                        <td>la Gachette</td>
+                                        <td>Netherland</td>
+                                        <td>780,000</td>
+                                        <td>Security Expert</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-warning">Open</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>herdrick@gmail.com</td>
+                                        <td>Herdrick</td>
+                                        <td>Indonesia</td>
+                                        <td>897,000</td>
+                                        <td>full stack dev</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-success">paid</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>stella@gmail.com</td>
+                                        <td>Stella</td>
+                                        <td>Japan</td>
+                                        <td>895,100</td>
+                                        <td>Accountant</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-info">On hold</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Jaqueline@gmail.com</td>
+                                        <td>Jaqueline</td>
+                                        <td>Germany</td>
+                                        <td>150,000</td>
+                                        <td>Product Designer</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-success">paid</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>tim@gmail.com</td>
+                                        <td>Tim</td>
+                                        <td>Italy</td>
+                                        <td>150,000</td>
+                                        <td></td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-warning">Open</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>john@gmail.com</td>
+                                        <td>John</td>
+                                        <td>Tokyo</td>
+                                        <td>150,000</td>
+                                        <td>Frontend Dev</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-success">paid</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td>20</td>
+                                      <td>Ndah@gmail.vom</td>
+                                      <td>ndah</td>
                                       <td>Cameroun</td>
                                       <td>950,000</td>
-                                      <td>693032040</td>
+                                      <td>Backend Dev</td>
                                       <td>
                                         <label class="badge rounded-btn badge-info">On hold</label>
                                       </td>
@@ -962,178 +1134,7 @@
                                           <i class="ti-close text-danger"></i>Remove
                                         </button>
                                       </td>
-                                  </tr>
-                                  <tr>
-                                      <td>2</td>
-                                      <td>other</td>
-                                      <td>Ruth</td>
-                                      <td>Brazil</td>
-                                      <td>250,000</td>
-                                      <td>693056040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-danger">Pending</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>3</td>
-                                      <td>other</td>
-                                      <td>Meli</td>
-                                      <td>Tokyo</td>
-                                      <td>150,000</td>
-                                      <td>678032040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-success">Closed</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>4</td>
-                                      <td>Medical  </td>
-                                      <td>la Gachette</td>
-                                      <td>Netherland</td>
-                                      <td>780,000</td>
-                                      <td>689032040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-warning">Open</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>5</td>
-                                      <td>casual</td>
-                                      <td>Herdrick</td>
-                                      <td>Indonesia</td>
-                                      <td>897,000</td>
-                                      <td>656032040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-success">Closed</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>6</td>
-                                      <td>other</td>
-                                      <td>Stella</td>
-                                      <td>Japan</td>
-                                      <td>895,100</td>
-                                      <td>693032040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-info">On hold</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>7</td>
-                                      <td>Medical</td>
-                                      <td>Jaqueline</td>
-                                      <td>Germany</td>
-                                      <td>150,000</td>
-                                      <td>693032040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-success">Closed</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>8</td>
-                                      <td>Medical</td>
-                                      <td>Tim</td>
-                                      <td>Italy</td>
-                                      <td>150,000</td>
-                                      <td>693032040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-warning">Open</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>9</td>
-                                      <td>casual</td>
-                                      <td>John</td>
-                                      <td>Tokyo</td>
-                                      <td>150,000</td>
-                                      <td>693032040</td>
-                                      <td>
-                                        <label class="badge rounded-btn badge-success">Closed</label>
-                                      </td>
-                                      <td class="text-right">
-                                        <a class="btn btn-dark" href="pages/samples/profile.html">
-                                          <i class="ti-eye text-primary"></i>View
-                                        </a>
-                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                          <i class="ti-close text-danger"></i>Remove
-                                        </button>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                    <td>10</td>
-                                    <td>Medical casual other</td>
-                                    <td>Alane Johan</td>
-                                    <td>Cameroun</td>
-                                    <td>950,000</td>
-                                    <td>693032040</td>
-                                    <td>
-                                      <label class="badge rounded-btn badge-info">On hold</label>
-                                    </td>
-                                    <td class="text-right">
-                                      <a class="btn btn-dark" href="pages/samples/profile.html">
-                                        <i class="ti-eye text-primary"></i>View
-                                      </a>
-                                      <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                        <i class="ti-close text-danger"></i>Remove
-                                      </button>
-                                    </td>
-                                </tr>
+                                    </tr>
                                     </tbody>
                                   </table>
                                 </div>

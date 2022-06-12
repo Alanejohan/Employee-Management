@@ -7,7 +7,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Easy Manage</title>
+
   <!-- plugins:css -->
+  <link rel="stylesheet" href="../../../../vendors/dropzone/dropzone.css">
+  <link rel="stylesheet" href="../../../../vendors/jquery-file-upload/uploadfile.css">
   <link rel="stylesheet" href="../../../../vendors/feather/feather.css">
   <link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
@@ -15,18 +18,21 @@
   <link rel="stylesheet" href="../../../../vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
-  <!-- plugin css for this page -->
-  <link rel="stylesheet" href="../../../../vendors/fullcalendar/fullcalendar.min.css">
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="../../../../js/select.dataTables.min.css">
+  <link rel="stylesheet" href="../../../../vendors/dragula/dragula.min.css">
+  <link rel="stylesheet" href="../../../../vendors/jquery-toast-plugin/jquery.toast.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../../../../css/vertical-layout-dark/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../../../images/favicon.png" />
 </head>
-
-<body class="with-welcome-text">
+<body class="with-welcome-text with-welcome-text">
   <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
+    <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
           <div class="me-3">
@@ -35,19 +41,19 @@
             </button>
           </div>
           <div>
-            <a class="navbar-brand brand-logo" href="../../index.html">
+            <a class="navbar-brand brand-logo" href="index.html">
               <img src="../../../../images/logo-dark.svg" alt="logo" />
             </a>
-            <a class="navbar-brand brand-logo-mini" href="../../index.html">
-              <img src="../../../../images/logo-mini.svg" alt="logo" />
+            <a class="navbar-brand brand-logo-mini" href="index.html">
+              <img src="../.././../images/logo-mini.svg" alt="logo" />
             </a> 
           </div>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-top">
           <ul class="navbar-nav">
             <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-              <h1 class="welcome-text"><span class="text-white fw-bold">Calendar Of Activities</span></h1>
-              <h3 class="welcome-sub-text">Your performance summary this week </h3>
+              <h1 class="welcome-text text-white fw-bold"><span class="text-white fw-bold">Payroll Overview</span></h1>
+              <h3 class="welcome-sub-text">for company</h3>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
@@ -99,16 +105,55 @@
               </form>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown">
+              <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
               <i class="icon-mail icon-lg"></i>
               </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+                <a class="dropdown-item py-3 border-bottom">
+                  <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                  <span class="badge badge-pill badge-primary float-right">View all</span>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-light mb-1">Application Error</h6>
+                    <p class="fw-light small-text mb-0"> Just now </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-light mb-1">Settings</h6>
+                    <p class="fw-light small-text mb-0"> Private message </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-light mb-1">New user registration</h6>
+                    <p class="fw-light small-text mb-0"> 2 days ago </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+                <span class="count"></span>
+              </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
-                <a href="email.html" class="dropdown-item py-3">
+                <a class="dropdown-item py-3">
                   <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
                   <span class="badge badge-pill badge-primary float-right">View all</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="email.html" class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img src="../../../../images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
                   </div>
@@ -117,7 +162,7 @@
                     <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
                   </div>
                 </a>
-                <a href="email.html" class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img src="../../../../images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
                   </div>
@@ -126,7 +171,7 @@
                     <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
                   </div>
                 </a>
-                <a href="email.html" class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img src="../../../../images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
                   </div>
@@ -137,59 +182,20 @@
                 </a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon-bell"></i>
-                <span class="count"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
-                <a href="notification.html" class="dropdown-item py-3 border-bottom">
-                  <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
-                  <span class="badge badge-pill badge-primary float-right">View all</span>
-                </a>
-                <a href="notification.html" class="dropdown-item preview-item py-3">
-                  <div class="preview-thumbnail">
-                    <i class="mdi mdi-alert m-auto text-primary"></i>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject fw-normal text-light mb-1">Application Error</h6>
-                    <p class="fw-light small-text mb-0"> Just now </p>
-                  </div>
-                </a>
-                <a href="notification.html" class="dropdown-item preview-item py-3">
-                  <div class="preview-thumbnail">
-                    <i class="mdi mdi-settings m-auto text-primary"></i>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject fw-normal text-light mb-1">Settings</h6>
-                    <p class="fw-light small-text mb-0"> Private message </p>
-                  </div>
-                </a>
-                <a href="notification.html" class="dropdown-item preview-item py-3">
-                  <div class="preview-thumbnail">
-                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject fw-normal text-light mb-1">New user registration</h6>
-                    <p class="fw-light small-text mb-0"> 2 days ago </p>
-                  </div>
-                </a>
-              </div>
-              
-            </li>
             <li class="nav-item dropdown d-none d-lg-block user-dropdown">
               <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <img class="img-xs rounded-circle" src="../../../../images/faces/face8.jpg" alt="Profile image"> </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
                   <img class="img-md rounded-circle" src="../../../../images/faces/face8.jpg" alt="Profile image">
-                  <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                  <p class="mb-1 mt-3 font-weight-semibold">Alane Johan</p>
                   <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
                 </div>
-                <a href="../settings/admin-profile.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
-                <a href="email.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-                <a href="email.html" class="dropdown-item"><i class="dropdown-item-icon icon-bell text-primary me-2"></i> Notification</a>
-                <a href="home.html"class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
               </div>
             </li>
           </ul>
@@ -200,7 +206,7 @@
       </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:../../partials/_settings-panel.html -->
+      <!-- partial:partials/_settings-panel.html -->
       <div id="right-sidebar" class="settings-panel">
         <i class="settings-close ti-close"></i>
         <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
@@ -352,7 +358,7 @@
         </div>
       </div>
       <!-- partial -->
-      <!-- partial:../../partials/_sidebar.html -->
+      <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item nav-category">Account</li>
@@ -370,33 +376,33 @@
           </li>
           <li class="nav-item nav-category">Applications</li>
           <li class="nav-item">
-            <a class="nav-link" href="email.html">
+            <a class="nav-link" href="../apps/email.html">
               <i class="menu-icon mdi mdi-email-outline"></i>
               <span class="menu-title">E-mail</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="calendar.html">
+            <a class="nav-link" href="../apps/calendar.html">
               <i class="menu-icon mdi mdi-calendar"></i>
               <span class="menu-title">Calendar</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="todo.html">
+            <a class="nav-link" href="../apps/todo.html">
               <i class="menu-icon mdi mdi-format-list-bulleted"></i>
               <span class="menu-title">Todo List</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">
+            <a class="nav-link" href="../apps/projects.html">
               <i class="menu-icon mdi mdi-file"></i>
               <span class="menu-title">Projects</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="notification.html">
-              <i class="menu-icon icon-bell"></i>
-              <span class="menu-title">Notification</span>
+            <a class="nav-link" href="../apps/news.html">
+              <i class="menu-icon mdi mdi-newspaper"></i>
+              <span class="menu-title">News</span>
             </a>
           </li>
           <li class="nav-item nav-category">Employee</li>
@@ -408,10 +414,9 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">All Employees</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Holidays</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Leaves</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">Leaves Setting </a></li>
+                <li class="nav-item"> <a class="nav-link" href="all-employees.html">All Employees</a></li>
+                <li class="nav-item"> <a class="nav-link" href="holidays.html">Holidays</a></li>
+                <li class="nav-item"> <a class="nav-link" href="leaves.html">Leaves</a></li>
               </ul>
             </div>
           </li>
@@ -423,9 +428,9 @@
             </a>
             <div class="collapse" id="payroll">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">Employee Salary</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Payslip</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/invoice.html">Payroll Items</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../payrolls/employee-salary.html">Employee Salary</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../payrolls/payslip.html">Payslip</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../payrolls/payroll-item.html">Payroll Items</a></li>
               </ul>
             </div>
           </li>
@@ -437,26 +442,26 @@
             </a>
             <div class="collapse" id="report">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">Expenses</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Invoices</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Payroll</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">Employees </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Payments</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">Project </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/expenses.html">Expenses</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/invoices.html">Invoices</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/payroll.html">Payroll</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/employee.html">Employees </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/payments.html">Payments</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/project.html">Project </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#report" aria-expanded="false" aria-controls="report">
+            <a class="nav-link" data-bs-toggle="collapse" href="#jobs" aria-expanded="false" aria-controls="jobs">
               <i class="menu-icon mdi mdi-clipboard"></i>
               <span class="menu-title">Jobs</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="report">
+            <div class="collapse" id="jobs">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">All Jobs</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Manage Jobs</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Job Applicants</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../jobs/all-jobs.html">All Jobs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../jobs/manage-jobs.html">Manage Jobs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../jobs/job-applicants.html">Job Applicants</a></li>
               </ul>
             </div>
           </li>
@@ -469,26 +474,26 @@
             </a>
             <div class="collapse" id="profile-setting">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Admin profile</a></li>                
-                <li class="nav-item"><a class="nav-link" href="pages/forms/advanced_elements.html">Employee Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="../setting/admin-profile.html">Admin profile</a></li>                
+                <li class="nav-item"><a class="nav-link" href="../setting/employee-profile.html">Employee Profile</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#employee-setting" aria-expanded="false" aria-controls="employee-setting">
-              <i class="menu-icon mdi mdi-card-text-outline"></i>
+              <i class="menu-icon mdi mdi-account-box"></i>
               <span class="menu-title">Employee</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="employee-setting">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Leaves Setting</a></li>                
-                <li class="nav-item"><a class="nav-link" href="pages/forms/advanced_elements.html">Holidays Setting</a></li>
+                <li class="nav-item"><a class="nav-link" href="../setting/leaves-setting.html">Leaves Setting</a></li>
+                <li class="nav-item"><a class="nav-link" href="../setting/holiday-setting.html">Holidays Setting</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/notifications.html">
+            <a class="nav-link" href="../setting/email.html">
               <i class="menu-icon mdi mdi-email"></i>
               <span class="menu-title">Email</span>
             </a>
@@ -499,78 +504,190 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+            
           <div class="row">
-            <div class="col-md-3">
-              <div class="fc-external-events">
-                <div class='fc-event'>
-                  <p>Deciphering Marketing Lingo For Small Business Owners</p>
-                  <p class="small-text"></p>
-                  <p class="text-muted mb-0">Georgia</p>
-                </div>
-                <div class='fc-event'>
-                  <p>Influencing The Influencer</p>
-                  <p class="small-text"></p>
-                  <p class="text-muted mb-0">Netherlands</p>
-                </div>
-                <div class='fc-event'>
-                  <p>Profiles Of The Powerful Advertising Exec Steve Grasse</p>
-                  <p class="small-text"></p>
-                  <p class="text-muted mb-0">Canada</p>
-                </div>
-              </div>
-              <div class="mt-4">
-                <p>Filter board</p>
-                <div class="form-check form-check-primary">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked>
-                    Project Board
-                  </label>
-                </div>
-                <div class="form-check form-check-danger">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked>
-                    Kamban Board
-                  </label>
-                </div>
-                <div class="form-check form-check-info">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked>
-                    Summary Board
-                  </label>
-                </div>
-                <div class="form-check form-check-success">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked>
-                    Planner Board
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Fullcalendar</h4>
-                  <div id="calendar" class="full-calendar"></div>
+            <div class="col-sm-12">
+              <div class="home-tab">
+                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a style="font-size: 20px; border-right: none;" class="nav-link text-white fw-bold active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Issue Payslip</a>
+                    </li>
+                    
+                  </ul>
+                  <div>
+                    <div>
+                      <button  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="btn btn-primary text-white btn-lg"><i class="mdi mdi-account-plus"></i> Add Payslip </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="row mt-4">
+            <div class="col-lg-12">
+                <div class="card px-2">
+                    <div class="card-body">
+                        <div class="container-fluid mt-5 d-flex justify-content-center w-100">
+                          <div class="table-responsive w-100">
+                              <table class="table">
+                                <thead>
+                                  <tr class="bg-dark text-white">
+                                      <th>Name</th>
+                                      <th>Description</th>
+                                      <th class="text-right">Category</th>
+                                      <th class="text-right">Unit cost</th>
+                                      <th class="text-right">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="text-right">
+                                    <td class="text-left">Leave</td>
+                                    <td class="text-left">Monthly Remunaration</td>
+                                    <td>Leaves</td>
+                                    <td>15,000</td>
+                                    <td class="text-right">
+                                      <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                        <i class="ti-eye text-primary"></i>Edit 
+                                      </a>
+                                      <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                        <i class="ti-close text-danger"></i>Remove
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr class="text-right">
+                                    <td class="text-left">Arrears of Salary</td>
+                                    <td class="text-left">Monthly Remunaration</td>
+                                    <td>Salary</td>
+                                    <td>10,000</td>
+                                    <td class="text-right">
+                                      <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                        <i class="ti-eye text-primary"></i>Edit
+                                      </a>
+                                      <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                        <i class="ti-close text-danger"></i>Remove
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr class="text-right">
+                                    <td class="text-left">Extra Hours</td>
+                                    <td class="text-left">Additional Remuneration</td>
+                                    <td>Salary</td>
+                                    <td>50,000</td>
+                                    <td class="text-right">
+                                      <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                        <i class="ti-eye text-primary"></i>edit 
+                                      </a>
+                                      <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                        <i class="ti-close text-danger"></i>Remove
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr class="text-right">
+                                    <td class="text-left">Holidays</td>
+                                    <td class="text-left">Reduction of Salary</td>
+                                    <td>Holidays</td>
+                                    <td>1000</td>
+                                    <td class="text-right">
+                                      <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                        <i class="ti-eye text-primary"></i>Edit 
+                                      </a>
+                                      <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                        <i class="ti-close text-danger"></i>Remove
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial -->
+        
       </div>
       <!-- main-panel ends -->
+      <!-- Modal starts -->
+      
+      <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel-2">Create User</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Leave Type <span class="text-danger">*</span></label>
+                                <input id="leave type" class="form-control" name="firstname" type="text" required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Email <span class="text-danger">*</span></label>
+                                <input id="email" class="form-control" name="email" type="email"  required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Start Date <span class="text-danger">*</span></label>
+                                <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">End Date <span class="text-danger">*</span></label>
+                                <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">No of Days </label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Reason</label>
+                                <input id="lastname" class="form-control" name="firstname" type="text"  required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-section">
+                      <button class="btn btn-primary submit-btn" >Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button onclick="showSwal('success-message')" type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Ends -->
     </div>
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-  <!-- plugins:js -->
+
+
+<!-- plugins:js -->
   <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
   <script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="../../../../vendors/moment/moment.min.js"></script>
-  <script src="../../../../vendors/fullcalendar/fullcalendar.min.js"></script>
+  <script src="../../../../vendors/chart.js/Chart.min.js"></script>
+  <script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../../../vendors/progressbar.js/progressbar.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- inject:js -->
   <script src="../../../../js/off-canvas.js"></script>
@@ -579,10 +696,36 @@
   <script src="../../../../js/settings.js"></script>
   <script src="../../../../js/todolist.js"></script>
   <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="../../../../vendors/dropzone/dropzone.js"></script>
+  <script src="../../../../vendors/dragula/dragula.min.js"></script>
+  
+  <!-- End plugin js for this page-->
   <!-- Custom js for this page-->
-  <script src="../../../../js/calendar.js"></script>
+  <script src="../../../../js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="../../../../js/dashboard.js"></script>
+  <script src="../../../../js/Chart.roundedBarCharts.js"></script>
+  <!-- Custom js for this page-->
+  <script src="../../../../js/form-validation.js"></script>
+  <script src="../../../../js/bt-maxLength.js"></script>
+  <script src="../../../../js/data-table.js"></script>
+  <script src="../../../../js/dropzone.js"></script>
+  <script src="../../../../js/dragula.js"></script>
+  <script src="../../../../vendors/jquery-validation/jquery.validate.min.js"></script>
+  <script src="../../../../vendors/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+  <script src="../../../../js/modal-demo.js"></script>
+  <script src="../../../../js/alerts.js"></script>
+  <script src="../../../../js/avgrund.js"></script>
+  <script src="../../../../js/toastDemo.js"></script>
+  <script src="../../../../vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
+
+  <script src="../../../../vendors/sweetalert/sweetalert.min.js"></script>
+  <script src="../../../../vendors/jquery.avgrund/jquery.avgrund.min.js"></script>
   <!-- End custom js for this page-->
 </body>
 
-<!-- Mirrored from www.bootstrapdash.com/demo/star-admin2-pro/template/demo/vertical-default-dark/pages/apps/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Feb 2022 03:00:39 GMT -->
+
 </html>
+
