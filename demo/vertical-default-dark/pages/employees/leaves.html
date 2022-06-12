@@ -504,47 +504,137 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+            
           <div class="row">
             <div class="col-sm-12">
               <div class="home-tab">
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a style="font-size: 20px; border-right: none;" class="nav-link text-white fw-bold active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                      <a style="font-size: 20px; border-right: none;" class="nav-link text-white fw-bold active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Leaves Overview</a>
                     </li>
                     
                   </ul>
                   <div>
                     <div>
-                      <button  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="btn btn-primary text-white btn-lg"><i class="mdi mdi-account-plus"></i> Add New Employee</button>
+                      <button  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="btn btn-primary text-white btn-lg"><i class="mdi mdi-account-plus"></i> Add New Leave</button>
                     </div>
                   </div>
                 </div>
                 <div class="tab-content tab-content-basic">
                   <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
                     <div class="row">
+                        <div class="col-sm-12">
+                          <div class="statistics-details d-flex align-items-center justify-content-between">
+                            <div class="card card-rounded d-md-block">
+                              <div class="card-body px-3 py-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                  <svg class="me-2" width="51" height="49" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.3623 27.6356C42.4741 12.3729 66.8746 12.4753 81.8623 27.8644C96.8501 43.2535 96.7495 68.1017 81.6377 83.3644C66.5259 98.6271 42.1254 98.5247 27.1377 83.1356C12.1499 67.7465 12.2505 42.8983 27.3623 27.6356ZM75.7473 77.3163C87.579 65.3664 87.6578 45.9116 75.9232 33.8628C64.1887 21.814 45.0844 21.7338 33.2527 33.6837C21.421 45.6336 21.3422 65.0884 33.0768 77.1372C44.8113 89.186 63.9156 89.2662 75.7473 77.3163Z" fill="#4A4C55"/>
+                                    <path d="M54.5179 16.2552C63.289 16.2594 71.7964 19.3104 78.6345 24.9041C85.4726 30.4979 90.2324 38.2998 92.1274 47.0209C94.0225 55.742 92.9395 64.8605 89.0573 72.87C85.1751 80.8796 78.7261 87.3009 70.7755 91.0731C62.825 94.8454 53.8487 95.7429 45.3295 93.6174C36.8103 91.4919 29.258 86.4706 23.9202 79.383C18.5824 72.2953 15.7785 63.5655 15.9717 54.6356C16.1649 45.7056 19.3436 37.11 24.9828 30.2687L31.4116 35.764C27.0006 41.1153 24.5142 47.8388 24.3631 54.8238C24.212 61.8088 26.4052 68.6373 30.5804 74.1813C34.7557 79.7253 40.6631 83.653 47.3268 85.3155C53.9905 86.9781 61.0118 86.276 67.2308 83.3254C73.4497 80.3747 78.4941 75.3519 81.5308 69.0869C84.5674 62.8218 85.4146 55.6893 83.9323 48.8676C82.4499 42.046 78.7269 35.9433 73.3781 31.5678C68.0293 27.1924 61.3748 24.8059 54.514 24.8026L54.5179 16.2552Z" fill="#3A61F6"/>
+                                    <path d="M64.8584 46.4651C64.8584 45.6292 64.1929 44.9516 63.3721 44.9516L49.9954 44.9516C49.1745 44.9516 48.5091 45.6292 48.5091 46.4651C48.5091 47.3011 49.1745 47.9787 49.9954 47.9787L61.8858 47.9787L61.8858 60.0873C61.8858 60.9232 62.5512 61.6009 63.3721 61.6009C64.1929 61.6009 64.8584 60.9232 64.8584 60.0873L64.8584 46.4651ZM46.6789 65.6052L64.4231 47.5354L62.3211 45.3949L44.5769 63.4647L46.6789 65.6052Z" fill="#3A61F6"/>
+                                  </svg>
+                                    
+                                  <div>
+                                    <p class="text-small mb-2">Annual Leaves</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">2689</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card card-rounded d-md-block">
+                              <div class="card-body px-3 py-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                  <svg class="me-2" width="51" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99474 60.9747 1.60427 39.5C1.2138 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0535 69.9436C57.8724 69.9436 71.259 56.3135 70.9532 39.5C70.6475 22.6864 56.7653 9.05634 39.9464 9.05634C23.1276 9.05634 9.74103 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                    <path d="M40.5179 0.255228C48.7259 0.259113 56.7184 2.93167 63.3309 7.8836C69.9435 12.8355 74.8308 19.8081 77.2808 27.7857L69.27 30.3371C67.3536 24.097 63.5308 18.643 58.3584 14.7696C53.186 10.8962 46.9343 8.80569 40.514 8.80265L40.5179 0.255228Z" fill="#3A61F6"/>
+                                    <path d="M27.5068 48.8578C27.4282 49.6825 28.0331 50.4147 28.8578 50.4932L42.297 51.7732C43.1217 51.8517 43.8539 51.2468 43.9324 50.4221C44.011 49.5974 43.4061 48.8652 42.5814 48.7867L30.6355 47.649L31.7732 35.703C31.8517 34.8783 31.2468 34.1461 30.4221 34.0676C29.5974 33.989 28.8652 34.5939 28.7867 35.4186L27.5068 48.8578ZM51.0447 28.8436L28.0447 47.8436L29.9553 50.1564L52.9553 31.1564L51.0447 28.8436Z" fill="#3A61F6"/>
+                                    </svg>
+                                    
+                                    
+                                  <div>
+                                    <p class="text-small mb-2">Medical Leaves</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">950</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card card-rounded d-none d-md-block">
+                              <div class="card-body px-3 py-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                  <svg class="me-2" width="50" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99474 60.9747 1.60427 39.5C1.2138 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0535 69.9436C57.8724 69.9436 71.259 56.3135 70.9532 39.5C70.6475 22.6864 56.7653 9.05634 39.9464 9.05634C23.1276 9.05634 9.74103 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                    <path d="M40.5007 0.962341C47.2985 0.962341 53.9796 2.69625 59.8898 5.99422C65.7999 9.29219 70.7363 14.0411 74.2154 19.7758C77.6945 25.5105 79.597 32.0343 79.7365 38.7082C79.8761 45.3821 78.2479 51.9772 75.0114 57.8474C71.775 63.7176 67.0413 68.6617 61.274 72.1953C55.5067 75.7289 48.9037 77.7309 42.1116 78.0051C35.3196 78.2793 28.5715 76.8164 22.5284 73.7597C16.4853 70.7029 11.3544 66.1571 7.63833 60.5676L14.7955 55.9791C17.7023 60.3513 21.7157 63.907 26.4426 66.298C31.1695 68.689 36.4479 69.8333 41.7606 69.6188C47.0734 69.4043 52.2383 67.8383 56.7495 65.0743C61.2607 62.3103 64.9634 58.4431 67.4949 53.8514C70.0265 49.2597 71.3001 44.101 71.1909 38.8807C71.0818 33.6603 69.5936 28.5574 66.8722 24.0717C64.1509 19.586 60.2896 15.8714 55.6667 13.2917C51.0438 10.712 45.8178 9.35576 40.5006 9.35576L40.5007 0.962341Z" fill="#3A61F6"/>
+                                    <path d="M27.5068 48.8577C27.4282 49.6824 28.0331 50.4146 28.8578 50.4932L42.297 51.7731C43.1217 51.8516 43.8539 51.2468 43.9325 50.4221C44.011 49.5974 43.4061 48.8652 42.5814 48.7866L30.6355 47.6489L31.7732 35.703C31.8517 34.8783 31.2469 34.1461 30.4222 34.0675C29.5975 33.989 28.8653 34.5938 28.7867 35.4185L27.5068 48.8577ZM51.0447 28.8435L28.0447 47.8435L29.9554 50.1564L52.9554 31.1564L51.0447 28.8435Z" fill="#3A61F6"/>
+                                  </svg>
+                                    
+                                    
+                                  <div>
+                                    <p class="text-small mb-2">other Leaves</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">698</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card card-rounded d-none d-md-block">
+                              <div class="card-body px-3 py-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                  <svg class="me-2" width="51" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99475 60.9747 1.60428 39.5C1.21381 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0536 69.9436C57.8724 69.9436 71.259 56.3135 70.9533 39.5C70.6475 22.6864 56.7653 9.05634 39.9465 9.05634C23.1276 9.05634 9.74105 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                    <path d="M40.5179 0.255228C48.419 0.258968 56.128 2.73572 62.6007 7.34999C69.0734 11.9643 73.9969 18.493 76.7044 26.0519C79.4119 33.6108 79.7724 41.8345 77.7372 49.6091C75.7019 57.3836 71.3693 64.3332 65.3261 69.5165C59.2829 74.6998 51.8213 77.8663 43.952 78.587C36.0827 79.3077 28.186 77.5479 21.3317 73.5458C14.4773 69.5438 8.99647 63.4929 5.63167 56.213C2.26688 48.933 1.1807 40.7758 2.52029 32.8462L10.7922 34.2954C9.74436 40.4979 10.594 46.8785 13.2259 52.5729C15.8579 58.2673 20.145 63.0003 25.5065 66.1307C30.868 69.2611 37.0448 70.6377 43.2002 70.0739C49.3556 69.5102 55.1921 67.0333 59.919 62.979C64.646 58.9246 68.035 53.4886 69.627 47.4073C71.219 41.3261 70.937 34.8935 68.8192 28.9809C66.7014 23.0683 62.8502 17.9615 57.7872 14.3522C52.7243 10.7429 46.6943 8.80557 40.514 8.80265L40.5179 0.255228Z" fill="#3A61F6"/>
+                                    <path d="M50.8584 30.4651C50.8584 29.6292 50.193 28.9515 49.3721 28.9515L35.9954 28.9515C35.1745 28.9515 34.5091 29.6292 34.5091 30.4651C34.5091 31.301 35.1745 31.9787 35.9954 31.9787L47.8858 31.9787L47.8858 44.0872C47.8858 44.9232 48.5512 45.6008 49.3721 45.6008C50.193 45.6008 50.8584 44.9232 50.8584 44.0872L50.8584 30.4651ZM32.6789 49.6051L50.4231 31.5353L48.3211 29.3948L30.5769 47.4646L32.6789 49.6051Z" fill="#3A61F6"/>
+                                  </svg> 
+                                  <div>
+                                    <p class="text-small mb-2">Casual Leaves</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">12</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="card card-rounded d-none d-md-block">
+                              <div class="card-body px-3 py-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                  <svg class="me-2" width="51" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99475 60.9747 1.60428 39.5C1.21381 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0536 69.9436C57.8724 69.9436 71.259 56.3135 70.9533 39.5C70.6475 22.6864 56.7653 9.05634 39.9465 9.05634C23.1276 9.05634 9.74105 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                    <path d="M40.5179 0.255228C46.7442 0.258175 52.877 1.79735 58.3916 4.74101C63.9062 7.68468 68.6383 11.9452 72.1829 17.1579C75.7275 22.3706 77.9791 28.3803 78.745 34.6727C79.5109 40.9651 78.7682 47.3527 76.5805 53.2889C74.3929 59.2252 70.8254 64.5333 66.1834 68.7589C61.5414 72.9845 55.9632 76.0019 49.926 77.5527C43.8889 79.1036 37.5726 79.1417 31.5178 77.6639C25.463 76.1861 19.85 73.2363 15.1591 69.067L20.6783 62.6274C24.3475 65.8886 28.7381 68.1959 33.4741 69.3519C38.2102 70.5078 43.1508 70.478 47.873 69.2649C52.5953 68.0519 56.9587 65.6917 60.5896 62.3864C64.2206 59.0811 67.0111 54.9291 68.7223 50.2857C70.4335 45.6424 71.0144 40.646 70.4153 35.7241C69.8163 30.8022 68.0551 26.1014 65.2825 22.024C62.5098 17.9466 58.8084 14.614 54.4949 12.3114C50.1813 10.0089 45.3842 8.80496 40.514 8.80265L40.5179 0.255228Z" fill="#3A61F6"/>
+                                    <path d="M50.8584 30.4651C50.8584 29.6292 50.193 28.9515 49.3721 28.9515L35.9954 28.9515C35.1745 28.9515 34.5091 29.6292 34.5091 30.4651C34.5091 31.301 35.1745 31.9787 35.9954 31.9787L47.8858 31.9787L47.8858 44.0872C47.8858 44.9232 48.5512 45.6008 49.3721 45.6008C50.193 45.6008 50.8584 44.9232 50.8584 44.0872L50.8584 30.4651ZM32.6789 49.6051L50.4231 31.5353L48.3211 29.3948L30.5769 47.4646L32.6789 49.6051Z" fill="#3A61F6"/>
+                                  </svg>
+                                  <div>
+                                    <p class="text-small mb-2">Remaining Leaves</p>
+                                    <h4 class="mb-0 fw-bold circle-progress-color">8975</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
                       <div class="col-12">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Employee List</h4>
+                            <h4 class="card-title">Leave List</h4>
                             <div class="row">
                               <div class="col-12">
                                 <div class="table-responsive">
                                   <table id="order-listing" class="table">
                                     <thead>
                                       <tr class="bg-dark text-white">
-                                          <th>Employee ID</th>
-                                          <th>Name</th>
-                                          <th>Country</th>
-                                          <th>Salary</th>
-                                          <th>Phone  No</th>
+                                          <th>#</th>
+                                          <th>Leave Type</th>
+                                          <th>From</th>
+                                          <th>To</th>
+                                          <th>No of Days</th>
+                                          <th>Reason</th>
                                           <th>Status</th>
                                           <th>Actions</th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
-                                          <td>WD-61</td>
+                                          <td>1</td>
+                                          <td>Medical</td>
                                           <td>Alane Johan</td>
                                           <td>Cameroun</td>
                                           <td>950,000</td>
@@ -562,7 +652,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-62</td>
+                                          <td>2</td>
+                                          <td>other</td>
                                           <td>Ruth</td>
                                           <td>Brazil</td>
                                           <td>250,000</td>
@@ -580,7 +671,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-63</td>
+                                          <td>3</td>
+                                          <td>other</td>
                                           <td>Meli</td>
                                           <td>Tokyo</td>
                                           <td>150,000</td>
@@ -598,7 +690,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-64</td>
+                                          <td>4</td>
+                                          <td>Medical  </td>
                                           <td>la Gachette</td>
                                           <td>Netherland</td>
                                           <td>780,000</td>
@@ -616,7 +709,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-65</td>
+                                          <td>5</td>
+                                          <td>casual</td>
                                           <td>Herdrick</td>
                                           <td>Indonesia</td>
                                           <td>897,000</td>
@@ -634,7 +728,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-66</td>
+                                          <td>6</td>
+                                          <td>other</td>
                                           <td>Stella</td>
                                           <td>Japan</td>
                                           <td>895,100</td>
@@ -652,7 +747,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-67</td>
+                                          <td>7</td>
+                                          <td>Medical</td>
                                           <td>Jaqueline</td>
                                           <td>Germany</td>
                                           <td>150,000</td>
@@ -670,7 +766,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-68</td>
+                                          <td>8</td>
+                                          <td>Medical</td>
                                           <td>Tim</td>
                                           <td>Italy</td>
                                           <td>150,000</td>
@@ -688,7 +785,8 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-69</td>
+                                          <td>9</td>
+                                          <td>casual</td>
                                           <td>John</td>
                                           <td>Tokyo</td>
                                           <td>150,000</td>
@@ -706,203 +804,214 @@
                                           </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-70</td>
-                                          <td>Tom</td>
-                                          <td>Germany</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-71</td>
-                                          <td>Aleena</td>
-                                          <td>New York</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-72</td>
-                                          <td>Alphy</td>
-                                          <td>Brazil</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-73</td>
-                                          <td>Twinkle</td>
-                                          <td>Italy</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-74</td>
-                                          <td>Catherine</td>
-                                          <td>Brazil</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-75</td>
-                                          <td>Daniel</td>
-                                          <td>Singapore</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-76</td>
-                                          <td>Tom</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-info">On hold</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-77</td>
-                                          <td>Cris</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-78</td>
-                                          <td>Tim</td>
-                                          <td>Italy</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-79</td>
-                                          <td>Jack</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-80</td>
-                                          <td>Tony</td>
-                                          <td>Germany</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-info">On hold</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
+                                        <td>10</td>
+                                        <td>Medical casual other</td>
+                                        <td>Alane Johan</td>
+                                        <td>Cameroun</td>
+                                        <td>950,000</td>
+                                        <td>693032040</td>
+                                        <td>
+                                          <label class="badge rounded-btn badge-info">On hold</label>
+                                        </td>
+                                        <td class="text-right">
+                                          <a class="btn btn-dark" href="pages/samples/profile.html">
+                                            <i class="ti-eye text-primary"></i>View
+                                          </a>
+                                          <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                            <i class="ti-close text-danger"></i>Remove
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>Medical</td>
+                                      <td>Alane Johan</td>
+                                      <td>Cameroun</td>
+                                      <td>950,000</td>
+                                      <td>693032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-info">On hold</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>2</td>
+                                      <td>other</td>
+                                      <td>Ruth</td>
+                                      <td>Brazil</td>
+                                      <td>250,000</td>
+                                      <td>693056040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-danger">Pending</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                      <td>other</td>
+                                      <td>Meli</td>
+                                      <td>Tokyo</td>
+                                      <td>150,000</td>
+                                      <td>678032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-success">Closed</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>4</td>
+                                      <td>Medical  </td>
+                                      <td>la Gachette</td>
+                                      <td>Netherland</td>
+                                      <td>780,000</td>
+                                      <td>689032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-warning">Open</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>5</td>
+                                      <td>casual</td>
+                                      <td>Herdrick</td>
+                                      <td>Indonesia</td>
+                                      <td>897,000</td>
+                                      <td>656032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-success">Closed</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>6</td>
+                                      <td>other</td>
+                                      <td>Stella</td>
+                                      <td>Japan</td>
+                                      <td>895,100</td>
+                                      <td>693032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-info">On hold</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>7</td>
+                                      <td>Medical</td>
+                                      <td>Jaqueline</td>
+                                      <td>Germany</td>
+                                      <td>150,000</td>
+                                      <td>693032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-success">Closed</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>8</td>
+                                      <td>Medical</td>
+                                      <td>Tim</td>
+                                      <td>Italy</td>
+                                      <td>150,000</td>
+                                      <td>693032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-warning">Open</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>9</td>
+                                      <td>casual</td>
+                                      <td>John</td>
+                                      <td>Tokyo</td>
+                                      <td>150,000</td>
+                                      <td>693032040</td>
+                                      <td>
+                                        <label class="badge rounded-btn badge-success">Closed</label>
+                                      </td>
+                                      <td class="text-right">
+                                        <a class="btn btn-dark" href="pages/samples/profile.html">
+                                          <i class="ti-eye text-primary"></i>View
+                                        </a>
+                                        <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                          <i class="ti-close text-danger"></i>Remove
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td>10</td>
+                                    <td>Medical casual other</td>
+                                    <td>Alane Johan</td>
+                                    <td>Cameroun</td>
+                                    <td>950,000</td>
+                                    <td>693032040</td>
+                                    <td>
+                                      <label class="badge rounded-btn badge-info">On hold</label>
+                                    </td>
+                                    <td class="text-right">
+                                      <a class="btn btn-dark" href="pages/samples/profile.html">
+                                        <i class="ti-eye text-primary"></i>View
+                                      </a>
+                                      <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                        <i class="ti-close text-danger"></i>Remove
+                                      </button>
+                                    </td>
+                                </tr>
                                     </tbody>
                                   </table>
                                 </div>
@@ -1356,16 +1465,11 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label class="col-form-label">First Name <span class="text-danger">*</span></label>
-                                <input id="firstname" class="form-control" name="firstname" type="text" required>
+                                <label class="col-form-label">Leave Type <span class="text-danger">*</span></label>
+                                <input id="leave type" class="form-control" name="firstname" type="text" required>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Last Name</label>
-                                <input id="lastname" class="form-control" name="firstname" type="text"  required>
-                            </div>
-                        </div>
+                        
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="col-form-label">Email <span class="text-danger">*</span></label>
@@ -1374,57 +1478,26 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label class="col-form-label">Password<span class="text-danger">*</span></label>
-                                <input id="password" class="form-control" name="password" type="password"  required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Confirm Password <span class="text-danger">*</span></label>
-                                <input  id="confirm_password" class="form-control" name="confirm_password" type="password" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Country</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                          
-                            <div class="form-group">
-                                <label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
+                                <label class="col-form-label">Start Date <span class="text-danger">*</span></label>
                                 <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label class="col-form-label">Phone </label>
+                                <label class="col-form-label">End Date <span class="text-danger">*</span></label>
+                                <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">No of Days </label>
                                 <input class="form-control" type="text">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <div class="form-group">
-                                <label>Department <span class="text-danger">*</span></label>
-                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-7-xbx6" tabindex="-1"
-                                    aria-hidden="true" required>
-                                    <option data-select2-id="select2-data-9-9gmg">Select Department</option>
-                                    <option>Web Development</option>
-                                    <option>IT Management</option>
-                                    <option>Marketing</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Designation <span class="text-danger">*</span></label>
-                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-10-egm7"
-                                    tabindex="-1" aria-hidden="true" required>
-                                    <option data-select2-id="select2-data-12-gap6">Select Designation</option>
-                                    <option>Web Designer</option>
-                                    <option>Web Developer</option>
-                                    <option>Android Developer</option>
-                                </select>
+                                <label class="col-form-label">Reason</label>
+                                <input id="lastname" class="form-control" name="firstname" type="text"  required>
                             </div>
                         </div>
                     </div>
