@@ -526,382 +526,216 @@
                       <div class="col-12">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Employee List</h4>
+                            <h4 class="card-title">Holidays List</h4>
                             <div class="row">
                               <div class="col-12">
                                 <div class="table-responsive">
                                   <table id="order-listing" class="table">
                                     <thead>
                                       <tr class="bg-dark text-white">
-                                          <th>Employee ID</th>
-                                          <th>Name</th>
-                                          <th>Country</th>
-                                          <th>Salary</th>
-                                          <th>Phone  No</th>
-                                          <th>Status</th>
-                                          <th>Actions</th>
+                                          <th class="text-center">#</th>
+                                          <th class="text-center">Title</th>
+                                          <th class="text-center">Holiday Date</th>
+                                          <th class="text-center">Day</th>
+                                          <th class="text-center">Actions</th>
                                       </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="text-center">
                                       <tr>
-                                          <td>WD-61</td>
-                                          <td>Alane Johan</td>
-                                          <td>Cameroun</td>
-                                          <td>950,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-info">On hold</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>1</td>
+                                        <td>New Year</td>
+                                        <td>1 Jan 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-62</td>
-                                          <td>Ruth</td>
-                                          <td>Brazil</td>
-                                          <td>250,000</td>
-                                          <td>693056040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>2</td>
+                                        <td>Good Friday</td>
+                                        <td>14 April 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-63</td>
-                                          <td>Meli</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>678032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>3</td>
+                                        <td>May Day</td>
+                                        <td>1 May 2022</td>
+                                        <td>Wednessday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-64</td>
-                                          <td>la Gachette</td>
-                                          <td>Netherland</td>
-                                          <td>780,000</td>
-                                          <td>689032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>4</td>
+                                        <td>Memorial Day</td>
+                                        <td>28 May 2022</td>
+                                        <td>Monday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-65</td>
-                                          <td>Herdrick</td>
-                                          <td>Indonesia</td>
-                                          <td>897,000</td>
-                                          <td>656032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>5</td>
+                                        <td>Ramzon</td>
+                                        <td>26 Jun 2022</td>
+                                        <td>Monday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-66</td>
-                                          <td>Stella</td>
-                                          <td>Japan</td>
-                                          <td>895,100</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-info">On hold</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>6</td>
+                                        <td>Bakrid</td>
+                                        <td>2 Sep 2022</td>
+                                        <td>Thursday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-67</td>
-                                          <td>Jaqueline</td>
-                                          <td>Germany</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>7</td>
+                                        <td>New Year</td>
+                                        <td>1 Jan 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-68</td>
-                                          <td>Tim</td>
-                                          <td>Italy</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>8</td>
+                                        <td>New Year</td>
+                                        <td>1 Jan 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-69</td>
-                                          <td>John</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>9</td>
+                                        <td>New Year</td>
+                                        <td>1 Jan 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-70</td>
-                                          <td>Tom</td>
-                                          <td>Germany</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>10</td>
+                                        <td>New Year</td>
+                                        <td>1 Jan 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-71</td>
-                                          <td>Aleena</td>
-                                          <td>New York</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>11</td>
+                                        <td>New Year</td>
+                                        <td>1 Jan 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-72</td>
-                                          <td>Alphy</td>
-                                          <td>Brazil</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>12</td>
+                                        <td>Good Friday</td>
+                                        <td>14 April 2022</td>
+                                        <td>Sunday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-73</td>
-                                          <td>Twinkle</td>
-                                          <td>Italy</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>13</td>
+                                        <td>May Day</td>
+                                        <td>1 May 2022</td>
+                                        <td>Wednessday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                       <tr>
-                                          <td>WD-74</td>
-                                          <td>Catherine</td>
-                                          <td>Brazil</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
+                                        <td>14</td>
+                                        <td>Memorial Day</td>
+                                        <td>28 May 2022</td>
+                                        <td>Monday</td>
+                                        <td>
+                                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal-2" >
+                                              <i class="ti-eye text-primary"></i>modify
                                             </a>
                                             <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
                                               <i class="ti-close text-danger"></i>Remove
                                             </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-75</td>
-                                          <td>Daniel</td>
-                                          <td>Singapore</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-76</td>
-                                          <td>Tom</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-info">On hold</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-77</td>
-                                          <td>Cris</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-warning">Open</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-78</td>
-                                          <td>Tim</td>
-                                          <td>Italy</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-success">Closed</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-79</td>
-                                          <td>Jack</td>
-                                          <td>Tokyo</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-danger">Pending</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>WD-80</td>
-                                          <td>Tony</td>
-                                          <td>Germany</td>
-                                          <td>150,000</td>
-                                          <td>693032040</td>
-                                          <td>
-                                            <label class="badge rounded-btn badge-info">On hold</label>
-                                          </td>
-                                          <td class="text-right">
-                                            <a class="btn btn-dark" href="pages/samples/profile.html">
-                                              <i class="ti-eye text-primary"></i>View
-                                            </a>
-                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
-                                              <i class="ti-close text-danger"></i>Remove
-                                            </button>
-                                          </td>
+                                        </td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -912,424 +746,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row flex-grow my-3">
-                      <div class="col-12 col-md-8 grid-margin stretch-card">
-                        <div class="card card-rounded">
-                          <div class="card-body">
-                            <div class="d-sm-flex justify-content-between align-items-start">
-                              <div>
-                                <h4 class="card-title card-title-dash">Pending Employee Requests</h4>
-                               <p class="card-subtitle card-subtitle-dash">You have 50+ new requests</p>
-                              </div>
-                              
-                            </div>
-                            <div class="table-responsive  mt-1">
-                              <table class="table select-table">
-                                <thead>
-                                  <tr>
-                                    <th>
-                                      <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                          <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                      </div>
-                                    </th>
-                                    <th>Employee</th>
-                                    <th>Request</th>
-                                    <th>Progress</th>
-                                    <th>Status</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>
-                                      <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <div class="d-flex ">
-                                        <img src="../../../../images/faces/face1.jpg" alt="">
-                                        <div>
-                                          <h6>Brandon Washington</h6>
-                                          <p>It specialist</p>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <h6>Account Creation</h6>
-                                      <p>pending verification</p>
-                                    </td>
-                                    <td>
-                                      <div>
-                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                          <p class="text-success">79%</p>
-                                          <p>85/162</p>
-                                        </div>
-                                        <div class="progress progress-md">
-                                          <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td><div class="badge badge-opacity-info">In progress</div></td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <div class="d-flex">
-                                        <img src="../../../../images/faces/face2.jpg" alt="">
-                                        <div>
-                                          <h6>Laura Brooks</h6>
-                                          <p>Head admin</p>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <h6>Salary</h6>
-                                      <p>monthly salary</p>
-                                    </td>
-                                    <td>
-                                      <div>
-                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                          <p class="text-success">65%</p>
-                                          <p>85/162</p>
-                                        </div>
-                                        <div class="progress progress-md">
-                                          <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td><div class="badge badge-opacity-success">Completed</div></td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <div class="d-flex">
-                                        <img src="../../../../images/faces/face3.jpg" alt="">
-                                        <div>
-                                          <h6>Wayne Murphy</h6>
-                                          <p>Head admin</p>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <h6>Holidays</h6>
-                                      <p>4 months holidays</p>
-                                    </td>
-                                    <td>
-                                      <div>
-                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                          <p class="text-success">65%</p>
-                                          <p>85/162</p>
-                                        </div>
-                                        <div class="progress progress-md">
-                                          <div class="progress-bar bg-warning" role="progressbar" style="width: 38%" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td><div class="badge badge-opacity-info">In progress</div></td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <div class="d-flex">
-                                        <img src="../../../../images/faces/face4.jpg" alt="">
-                                        <div>
-                                          <h6>Matthew Bailey</h6>
-                                          <p>Head admin</p>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <h6>Leave</h6>
-                                      <p>1 week leave</p>
-                                    </td>
-                                    <td>
-                                      <div>
-                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                          <p class="text-success">65%</p>
-                                          <p>85/162</p>
-                                        </div>
-                                        <div class="progress progress-md">
-                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td><div class="badge badge-opacity-danger">Pending</div></td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <div class="d-flex">
-                                        <img src="../../../../images/faces/face5.jpg" alt="">
-                                        <div>
-                                          <h6>Katherine Butler</h6>
-                                          <p>Head admin</p>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <h6>Holidays</h6>
-                                      <p>1 week holidays</p>
-                                    </td>
-                                    <td>
-                                      <div>
-                                        <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
-                                          <p class="text-success">65%</p>
-                                          <p>85/162</p>
-                                        </div>
-                                        <div class="progress progress-md">
-                                          <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td><div class="badge badge-opacity-success">Completed</div></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4 grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body">
-                            <h4 class="card-title">Upload Data from csv</h4>
-                            <form action="https://www.bootstrapdash.com/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-8 grid-margin">
-                        <div class="card">
-                          <div class="card-body">
-                            <h4 class="card-title">Employee Work Teams</h4>
-                            <p class="card-description">Drag and drop between Team A and Team B</p>
-                            <div class="row">
-                              <div class="col-md-6 h-100">
-                                <div class="bg-dark p-4">
-                                  <h6 class="card-title text-white">Team A</h6>
-                                  <div id="profile-list-left" class="py-2">
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../../../images/faces/face1.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">Rebecca young</h6>
-                                            <p class="mb-0 text-muted">
-                                              Software engineer                               
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../../../images/faces/face2.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">Jacob march</h6>
-                                            <p class="mb-0 text-muted">
-                                              Designer                                
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../../../images/faces/face3.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">Catherine</h6>
-                                            <p class="mb-0 text-muted">
-                                              Tester                                
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../../../images/faces/face4.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">Thomas Cook</h6>
-                                            <p class="mb-0 text-muted">
-                                              Developer                                
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-6 h-100">
-                                <div class="bg-dark p-4">
-                                  <h6 class="card-title text-white">Team B</h6>
-                                  <div id="profile-list-right" class="py-2">
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../../../images/faces/face5.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">Keto Philip</h6>
-                                            <p class="mb-0 text-muted">
-                                              Business Analyst                               
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../../../images/faces/face6.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">Jacob Stephen</h6>
-                                            <p class="mb-0 text-muted">
-                                              Tester                                
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../images/faces/face7.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">March Creg</h6>
-                                            <p class="mb-0 text-muted">
-                                              Developer                               
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card rounded box-shadow mb-2">
-                                      <div class="card-body p-3">
-                                        <div class="media">
-                                          <img src="../../../../images/faces/face8.jpg" alt="image" class="img-sm me-3 rounded-circle">
-                                          <div class="media-body">
-                                            <h6 class="mb-1">Peter Beckham</h6>
-                                            <p class="mb-0 text-muted">
-                                              Designer                                
-                                            </p>
-                                          </div>                              
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4 grid-margin stretch-card">
-                        <div class="card card-rounded">
-                          <div class="card-body">
-                            <div class="row">
-                              <div class="col-lg-12">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                  <div>
-                                    <h4 class="card-title card-title-dash">Top Performer</h4>
-                                  </div>
-                                </div>
-                                <div class="mt-3">
-                                  <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
-                                    <div class="d-flex">
-                                      <img class="img-sm rounded-10" src="../../../../images/faces/face1.jpg" alt="profile">
-                                      <div class="wrapper ms-3">
-                                        <p class="ms-1 mb-1 fw-bold">Brandon Washington</p>
-                                        <small class="text-muted mb-0">162543</small>
-                                      </div>
-                                    </div>
-                                    <div class="text-muted text-small">
-                                      1h ago
-                                    </div>
-                                  </div>
-                                  <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
-                                    <div class="d-flex">
-                                      <img class="img-sm rounded-10" src="../../../../images/faces/face2.jpg" alt="profile">
-                                      <div class="wrapper ms-3">
-                                        <p class="ms-1 mb-1 fw-bold">Wayne Murphy</p>
-                                        <small class="text-muted mb-0">162543</small>
-                                      </div>
-                                    </div>
-                                    <div class="text-muted text-small">
-                                      1h ago
-                                    </div>
-                                  </div>
-                                  <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
-                                    <div class="d-flex">
-                                      <img class="img-sm rounded-10" src="../../../../images/faces/face3.jpg" alt="profile">
-                                      <div class="wrapper ms-3">
-                                        <p class="ms-1 mb-1 fw-bold">Katherine Butler</p>
-                                        <small class="text-muted mb-0">162543</small>
-                                      </div>
-                                    </div>
-                                    <div class="text-muted text-small">
-                                      1h ago
-                                    </div>
-                                  </div>
-                                  <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
-                                    <div class="d-flex">
-                                      <img class="img-sm rounded-10" src="../../../../images/faces/face4.jpg" alt="profile">
-                                      <div class="wrapper ms-3">
-                                        <p class="ms-1 mb-1 fw-bold">Matthew Bailey</p>
-                                        <small class="text-muted mb-0">162543</small>
-                                      </div>
-                                    </div>
-                                    <div class="text-muted text-small">
-                                      1h ago
-                                    </div>
-                                  </div>
-                                  <div class="wrapper d-flex align-items-center justify-content-between pt-2">
-                                    <div class="d-flex">
-                                      <img class="img-sm rounded-10" src="../../../../images/faces/face5.jpg" alt="profile">
-                                      <div class="wrapper ms-3">
-                                        <p class="ms-1 mb-1 fw-bold">Rafell John</p>
-                                        <small class="text-muted mb-0">Alaska, USA</small>
-                                      </div>
-                                    </div>
-                                    <div class="text-muted text-small">
-                                      1h ago
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    
-                    
                   </div>
                 </div>
               </div>
@@ -1346,96 +762,28 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel-2">Create User</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+                <h5 class="modal-title" id="exampleModalLabel-2">Create Holiday</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="modal-body">
-                <form>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">First Name <span class="text-danger">*</span></label>
-                                <input id="firstname" class="form-control" name="firstname" type="text" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Last Name</label>
-                                <input id="lastname" class="form-control" name="firstname" type="text"  required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Email <span class="text-danger">*</span></label>
-                                <input id="email" class="form-control" name="email" type="email"  required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Password<span class="text-danger">*</span></label>
-                                <input id="password" class="form-control" name="password" type="password"  required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Confirm Password <span class="text-danger">*</span></label>
-                                <input  id="confirm_password" class="form-control" name="confirm_password" type="password" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Country</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                          
-                            <div class="form-group">
-                                <label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
-                                <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Phone </label>
-                                <input class="form-control" type="text">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Department <span class="text-danger">*</span></label>
-                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-7-xbx6" tabindex="-1"
-                                    aria-hidden="true" required>
-                                    <option data-select2-id="select2-data-9-9gmg">Select Department</option>
-                                    <option>Web Development</option>
-                                    <option>IT Management</option>
-                                    <option>Marketing</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Designation <span class="text-danger">*</span></label>
-                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-10-egm7"
-                                    tabindex="-1" aria-hidden="true" required>
-                                    <option data-select2-id="select2-data-12-gap6">Select Designation</option>
-                                    <option>Web Designer</option>
-                                    <option>Web Developer</option>
-                                    <option>Android Developer</option>
-                                </select>
-                            </div>
-                        </div>
+                <form method="get">
+                    <div class="form-group">
+                        <label>Holiday Name <span class="text-danger">*</span></label>
+                        <input class="form-control" type="text" required>
                     </div>
-                    <div class="submit-section">
-                      <button class="btn btn-primary submit-btn" >Submit</button>
+                    <div class="form-group">
+                        <label>Holiday Date <span class="text-danger">*</span></label>
+                        <div class="cal-icon"><input class="form-control datetimepicker" type="text" required></div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-              <button onclick="showSwal('success-message')" type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
+                
+                <input href="#" onclick="showSwal('success-message')" class="btn btn-primary" type="submit" value="Submit">
+                <button  type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
           </div>
         </div>
       </div>
