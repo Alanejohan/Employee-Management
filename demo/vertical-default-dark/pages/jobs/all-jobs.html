@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Easy Manage</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="../../../../js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../../../css/vertical-layout-dark/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../../../images/favicon.png" />
+</head>
+<body class="with-welcome-text with-welcome-text">
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="../../../../images/logo-dark.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html">
+            <img src="../.././../images/logo-mini.svg" alt="logo" />
+          </a> 
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top">
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text text-white fw-bold">Jobs <span class="text-white fw-bold">overview</span></h1>
+            <h3 class="welcome-sub-text">Your insights on your jobs this week</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
+                <p class="mb-0 font-weight-medium float-left">Select category</p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-light">Employees </p>
+                  <p class="fw-light small-text mb-0">Get insights about your Employees</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-light">Leaves</p>
+                  <p class="fw-light small-text mb-0">Get insights about your Leaves</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-light">Departments </p>
+                  <p class="fw-light small-text mb-0">Get insights about your Departments</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-light">Salaries </p>
+                  <p class="fw-light small-text mb-0">Get insights about your Salaries</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+              <span class="input-group-addon input-group-prepend border-right">
+                <span class="icon-calendar input-group-text calendar-icon"></span>
+              </span>
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+            <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+            <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-light mb-1">Application Error</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-light mb-1">Settings</h6>
+                  <p class="fw-light small-text mb-0"> Private message </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-light mb-1">New user registration</h6>
+                  <p class="fw-light small-text mb-0"> 2 days ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../../../images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-light">Marian Garner </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../../../images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-light">David Grey </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../../../images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-light">Travis Jenkins </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../../../images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../../../images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Alane Johan</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">build a js based app</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="../../../../images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../../../images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../../../images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../../../images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../../../images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../../../images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-category">Account</li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Admin</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../employee.html">
+              <i class="mdi mdi-account-multiple menu-icon "></i>
+              <span class="menu-title">Employee</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">Applications</li>
+          <li class="nav-item">
+            <a class="nav-link" href="../apps/email.html">
+              <i class="menu-icon mdi mdi-email-outline"></i>
+              <span class="menu-title">E-mail</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../apps/calendar.html">
+              <i class="menu-icon mdi mdi-calendar"></i>
+              <span class="menu-title">Calendar</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../apps/todo.html">
+              <i class="menu-icon mdi mdi-format-list-bulleted"></i>
+              <span class="menu-title">Todo List</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../apps/projects.html">
+              <i class="menu-icon mdi mdi-file"></i>
+              <span class="menu-title">Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../apps/news.html">
+              <i class="menu-icon mdi mdi-newspaper"></i>
+              <span class="menu-title">News</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">Employee</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="menu-icon mdi mdi-account-multiple"></i>
+              <span class="menu-title">Employee</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="all-employees.html">All Employees</a></li>
+                <li class="nav-item"> <a class="nav-link" href="holidays.html">Holidays</a></li>
+                <li class="nav-item"> <a class="nav-link" href="leaves.html">Leaves</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#payroll" aria-expanded="false" aria-controls="payroll">
+              <i class="menu-icon mdi mdi-account-card-details"></i>
+              <span class="menu-title">Payrolls</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="payroll">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../payrolls/employee-salary.html">Employee Salary</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../payrolls/payslip.html">Payslip</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../payrolls/payroll-item.html">Payroll Items</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#report" aria-expanded="false" aria-controls="report">
+              <i class="menu-icon mdi mdi-script"></i>
+              <span class="menu-title">Report</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="report">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../report/expenses.html">Expenses</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/invoices.html">Invoices</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/payroll.html">Payroll</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/employee.html">Employees </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/payments.html">Payments</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../report/project.html">Project </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#jobs" aria-expanded="false" aria-controls="jobs">
+              <i class="menu-icon mdi mdi-clipboard"></i>
+              <span class="menu-title">Jobs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="jobs">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../jobs/all-jobs.html">All Jobs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../jobs/manage-jobs.html">Manage Jobs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../jobs/job-applicants.html">Job Applicants</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Settings</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#profile-setting" aria-expanded="false" aria-controls="profile-setting">
+              <i class="menu-icon mdi mdi-card-text-outline"></i>
+              <span class="menu-title">Profile</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="profile-setting">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../setting/admin-profile.html">Admin profile</a></li>                
+                <li class="nav-item"><a class="nav-link" href="../setting/employee-profile.html">Employee Profile</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#employee-setting" aria-expanded="false" aria-controls="employee-setting">
+              <i class="menu-icon mdi mdi-account-box"></i>
+              <span class="menu-title">Employee</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="employee-setting">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../setting/leaves-setting.html">Leaves Setting</a></li>
+                <li class="nav-item"><a class="nav-link" href="../setting/holiday-setting.html">Holidays Setting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../setting/email.html">
+              <i class="menu-icon mdi mdi-email"></i>
+              <span class="menu-title">Email</span>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-tab">
+                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a style="font-size: 20px; border-right: none;" class="nav-link text-white fw-bold active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Company Jobs</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content tab-content-basic">
+                  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="statistics-details d-flex align-items-center justify-content-between">
+                          <div class="card card-rounded d-md-block">
+                            <div class="card-body px-3 py-3">
+                              <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                <svg class="me-2" width="51" height="49" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M27.3623 27.6356C42.4741 12.3729 66.8746 12.4753 81.8623 27.8644C96.8501 43.2535 96.7495 68.1017 81.6377 83.3644C66.5259 98.6271 42.1254 98.5247 27.1377 83.1356C12.1499 67.7465 12.2505 42.8983 27.3623 27.6356ZM75.7473 77.3163C87.579 65.3664 87.6578 45.9116 75.9232 33.8628C64.1887 21.814 45.0844 21.7338 33.2527 33.6837C21.421 45.6336 21.3422 65.0884 33.0768 77.1372C44.8113 89.186 63.9156 89.2662 75.7473 77.3163Z" fill="#4A4C55"/>
+                                  <path d="M54.5179 16.2552C63.289 16.2594 71.7964 19.3104 78.6345 24.9041C85.4726 30.4979 90.2324 38.2998 92.1274 47.0209C94.0225 55.742 92.9395 64.8605 89.0573 72.87C85.1751 80.8796 78.7261 87.3009 70.7755 91.0731C62.825 94.8454 53.8487 95.7429 45.3295 93.6174C36.8103 91.4919 29.258 86.4706 23.9202 79.383C18.5824 72.2953 15.7785 63.5655 15.9717 54.6356C16.1649 45.7056 19.3436 37.11 24.9828 30.2687L31.4116 35.764C27.0006 41.1153 24.5142 47.8388 24.3631 54.8238C24.212 61.8088 26.4052 68.6373 30.5804 74.1813C34.7557 79.7253 40.6631 83.653 47.3268 85.3155C53.9905 86.9781 61.0118 86.276 67.2308 83.3254C73.4497 80.3747 78.4941 75.3519 81.5308 69.0869C84.5674 62.8218 85.4146 55.6893 83.9323 48.8676C82.4499 42.046 78.7269 35.9433 73.3781 31.5678C68.0293 27.1924 61.3748 24.8059 54.514 24.8026L54.5179 16.2552Z" fill="#3A61F6"/>
+                                  <path d="M64.8584 46.4651C64.8584 45.6292 64.1929 44.9516 63.3721 44.9516L49.9954 44.9516C49.1745 44.9516 48.5091 45.6292 48.5091 46.4651C48.5091 47.3011 49.1745 47.9787 49.9954 47.9787L61.8858 47.9787L61.8858 60.0873C61.8858 60.9232 62.5512 61.6009 63.3721 61.6009C64.1929 61.6009 64.8584 60.9232 64.8584 60.0873L64.8584 46.4651ZM46.6789 65.6052L64.4231 47.5354L62.3211 45.3949L44.5769 63.4647L46.6789 65.6052Z" fill="#3A61F6"/>
+                                </svg>
+                                  
+                                <div>
+                                  <p class="text-small mb-2">Total Jobs</p>
+                                  <h4 class="mb-0 fw-bold circle-progress-color">2689</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card card-rounded d-md-block">
+                            <div class="card-body px-3 py-3">
+                              <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                <svg class="me-2" width="51" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99474 60.9747 1.60427 39.5C1.2138 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0535 69.9436C57.8724 69.9436 71.259 56.3135 70.9532 39.5C70.6475 22.6864 56.7653 9.05634 39.9464 9.05634C23.1276 9.05634 9.74103 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                  <path d="M40.5179 0.255228C48.7259 0.259113 56.7184 2.93167 63.3309 7.8836C69.9435 12.8355 74.8308 19.8081 77.2808 27.7857L69.27 30.3371C67.3536 24.097 63.5308 18.643 58.3584 14.7696C53.186 10.8962 46.9343 8.80569 40.514 8.80265L40.5179 0.255228Z" fill="#3A61F6"/>
+                                  <path d="M27.5068 48.8578C27.4282 49.6825 28.0331 50.4147 28.8578 50.4932L42.297 51.7732C43.1217 51.8517 43.8539 51.2468 43.9324 50.4221C44.011 49.5974 43.4061 48.8652 42.5814 48.7867L30.6355 47.649L31.7732 35.703C31.8517 34.8783 31.2468 34.1461 30.4221 34.0676C29.5974 33.989 28.8652 34.5939 28.7867 35.4186L27.5068 48.8578ZM51.0447 28.8436L28.0447 47.8436L29.9553 50.1564L52.9553 31.1564L51.0447 28.8436Z" fill="#3A61F6"/>
+                                  </svg>
+                                  
+                                  
+                                <div>
+                                  <p class="text-small mb-2">Total Tasks Done</p>
+                                  <h4 class="mb-0 fw-bold circle-progress-color">5110</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card card-rounded d-none d-md-block">
+                            <div class="card-body px-3 py-3">
+                              <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                <svg class="me-2" width="50" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99474 60.9747 1.60427 39.5C1.2138 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0535 69.9436C57.8724 69.9436 71.259 56.3135 70.9532 39.5C70.6475 22.6864 56.7653 9.05634 39.9464 9.05634C23.1276 9.05634 9.74103 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                  <path d="M40.5007 0.962341C47.2985 0.962341 53.9796 2.69625 59.8898 5.99422C65.7999 9.29219 70.7363 14.0411 74.2154 19.7758C77.6945 25.5105 79.597 32.0343 79.7365 38.7082C79.8761 45.3821 78.2479 51.9772 75.0114 57.8474C71.775 63.7176 67.0413 68.6617 61.274 72.1953C55.5067 75.7289 48.9037 77.7309 42.1116 78.0051C35.3196 78.2793 28.5715 76.8164 22.5284 73.7597C16.4853 70.7029 11.3544 66.1571 7.63833 60.5676L14.7955 55.9791C17.7023 60.3513 21.7157 63.907 26.4426 66.298C31.1695 68.689 36.4479 69.8333 41.7606 69.6188C47.0734 69.4043 52.2383 67.8383 56.7495 65.0743C61.2607 62.3103 64.9634 58.4431 67.4949 53.8514C70.0265 49.2597 71.3001 44.101 71.1909 38.8807C71.0818 33.6603 69.5936 28.5574 66.8722 24.0717C64.1509 19.586 60.2896 15.8714 55.6667 13.2917C51.0438 10.712 45.8178 9.35576 40.5006 9.35576L40.5007 0.962341Z" fill="#3A61F6"/>
+                                  <path d="M27.5068 48.8577C27.4282 49.6824 28.0331 50.4146 28.8578 50.4932L42.297 51.7731C43.1217 51.8516 43.8539 51.2468 43.9325 50.4221C44.011 49.5974 43.4061 48.8652 42.5814 48.7866L30.6355 47.6489L31.7732 35.703C31.8517 34.8783 31.2469 34.1461 30.4222 34.0675C29.5975 33.989 28.8653 34.5938 28.7867 35.4185L27.5068 48.8577ZM51.0447 28.8435L28.0447 47.8435L29.9554 50.1564L52.9554 31.1564L51.0447 28.8435Z" fill="#3A61F6"/>
+                                </svg>
+                                  
+                                  
+                                <div>
+                                  <p class="text-small mb-2">Total In progress</p>
+                                  <h4 class="mb-0 fw-bold circle-progress-color">69814</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card card-rounded d-none d-md-block">
+                            <div class="card-body px-3 py-3">
+                              <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                <svg class="me-2" width="51" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99475 60.9747 1.60428 39.5C1.21381 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0536 69.9436C57.8724 69.9436 71.259 56.3135 70.9533 39.5C70.6475 22.6864 56.7653 9.05634 39.9465 9.05634C23.1276 9.05634 9.74105 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                  <path d="M40.5179 0.255228C48.419 0.258968 56.128 2.73572 62.6007 7.34999C69.0734 11.9643 73.9969 18.493 76.7044 26.0519C79.4119 33.6108 79.7724 41.8345 77.7372 49.6091C75.7019 57.3836 71.3693 64.3332 65.3261 69.5165C59.2829 74.6998 51.8213 77.8663 43.952 78.587C36.0827 79.3077 28.186 77.5479 21.3317 73.5458C14.4773 69.5438 8.99647 63.4929 5.63167 56.213C2.26688 48.933 1.1807 40.7758 2.52029 32.8462L10.7922 34.2954C9.74436 40.4979 10.594 46.8785 13.2259 52.5729C15.8579 58.2673 20.145 63.0003 25.5065 66.1307C30.868 69.2611 37.0448 70.6377 43.2002 70.0739C49.3556 69.5102 55.1921 67.0333 59.919 62.979C64.646 58.9246 68.035 53.4886 69.627 47.4073C71.219 41.3261 70.937 34.8935 68.8192 28.9809C66.7014 23.0683 62.8502 17.9615 57.7872 14.3522C52.7243 10.7429 46.6943 8.80557 40.514 8.80265L40.5179 0.255228Z" fill="#3A61F6"/>
+                                  <path d="M50.8584 30.4651C50.8584 29.6292 50.193 28.9515 49.3721 28.9515L35.9954 28.9515C35.1745 28.9515 34.5091 29.6292 34.5091 30.4651C34.5091 31.301 35.1745 31.9787 35.9954 31.9787L47.8858 31.9787L47.8858 44.0872C47.8858 44.9232 48.5512 45.6008 49.3721 45.6008C50.193 45.6008 50.8584 44.9232 50.8584 44.0872L50.8584 30.4651ZM32.6789 49.6051L50.4231 31.5353L48.3211 29.3948L30.5769 47.4646L32.6789 49.6051Z" fill="#3A61F6"/>
+                                </svg>
+                                  
+                                  
+                                <div>
+                                  <p class="text-small mb-2">Employees Jobs</p>
+                                  <h4 class="mb-0 fw-bold circle-progress-color">12400</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card card-rounded d-none d-md-block">
+                            <div class="card-body px-3 py-3">
+                              <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                <svg class="me-2" width="51" height="49" viewBox="0 0 81 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M79.3957 39.5C79.7862 60.9747 62.6885 78.3835 41.207 78.3835C19.7255 78.3835 1.99475 60.9747 1.60428 39.5C1.21381 18.0252 18.3115 0.616516 39.793 0.616516C61.2745 0.616516 79.0053 18.0252 79.3957 39.5ZM10.0468 39.5C10.3525 56.3135 24.2347 69.9436 41.0536 69.9436C57.8724 69.9436 71.259 56.3135 70.9533 39.5C70.6475 22.6864 56.7653 9.05634 39.9465 9.05634C23.1276 9.05634 9.74105 22.6864 10.0468 39.5Z" fill="#4A4C55"/>
+                                  <path d="M40.5179 0.255228C47.6628 0.25861 54.666 2.28463 60.7455 6.107C66.825 9.92938 71.7413 15.3976 74.9454 21.9009C78.1495 28.4043 79.5151 35.6866 78.8898 42.9346C78.2645 50.1827 75.6728 57.111 71.4043 62.9458L64.6734 57.8393C68.0123 53.2754 70.0395 47.856 70.5286 42.1866C71.0177 36.5172 69.9495 30.8209 67.4433 25.734C64.937 20.647 61.0915 16.3698 56.3361 13.3799C51.5807 10.39 46.1027 8.8053 40.514 8.80265L40.5179 0.255228Z" fill="#3A61F6"/>
+                                  <path d="M27.5068 48.8578C27.4282 49.6825 28.0331 50.4147 28.8578 50.4932L42.297 51.7732C43.1217 51.8517 43.8539 51.2468 43.9324 50.4221C44.011 49.5974 43.4061 48.8652 42.5814 48.7867L30.6355 47.649L31.7732 35.703C31.8517 34.8783 31.2468 34.1461 30.4221 34.0676C29.5974 33.989 28.8652 34.5939 28.7867 35.4186L27.5068 48.8578ZM51.0447 28.8436L28.0447 47.8436L29.9553 50.1564L52.9553 31.1564L51.0447 28.8436Z" fill="#3A61F6"/>
+                                </svg>
+                                  
+                                  
+                                <div>
+                                  <p class="text-small mb-2">Un-assigned Jobs </p>
+                                  <h4 class="mb-0 fw-bold circle-progress-color">58619</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Jobs List</h4>
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="table-responsive">
+                                  <table id="order-listing" class="table">
+                                    <thead>
+                                      <tr class="bg-dark text-white">
+                                          <th>Job ID</th>
+                                          <th>Name</th>
+                                          <th>hours / week</th>
+                                          <th>Salary</th>
+                                          <th>Job</th>
+                                          <th>Status</th>
+                                          <th>Actions</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                          <td>JB-61</td>
+                                          <td>Alane Johan</td>
+                                          <td>4 hr</td>
+                                          <td>950,000</td>
+                                          <td>Ux Designer</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-info">On hold</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-62</td>
+                                          <td>Ruth</td>
+                                          <td>8 hr</td>
+                                          <td>250,000</td>
+                                          <td>Frontend Developer</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-danger">Pending</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-63</td>
+                                          <td>Meli</td>
+                                          <td>6 hr</td>
+                                          <td>150,000</td>
+                                          <td>Backend Developer</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-64</td>
+                                          <td>la Gachette</td>
+                                          <td>4 hr</td>
+                                          <td>780,000</td>
+                                          <td>Manager</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-warning">Open</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-65</td>
+                                          <td>Herdrick</td>
+                                          <td>3 hr</td>
+                                          <td>897,000</td>
+                                          <td>Technical Advisor</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-66</td>
+                                          <td>Stella</td>
+                                          <td>7 hr</td>
+                                          <td>895,100</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-info">On hold</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-67</td>
+                                          <td>Jaqueline</td>
+                                          <td>8 hr</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-68</td>
+                                          <td>Tim</td>
+                                          <td>3 hr</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-warning">Open</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-69</td>
+                                          <td>John</td>
+                                          <td>4 hr</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-70</td>
+                                          <td>Tom</td>
+                                          <td>7 hr</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-danger">Pending</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-71</td>
+                                          <td>Aleena</td>
+                                          <td>9 hr</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-danger">Pending</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-72</td>
+                                          <td>Alphy</td>
+                                          <td>4 hr</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-warning">Open</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-73</td>
+                                          <td>Twinkle</td>
+                                          <td>5 hr</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-warning">Open</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-74</td>
+                                          <td>Catherine</td>
+                                          <td>Brazil</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-75</td>
+                                          <td>Daniel</td>
+                                          <td>Singapore</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-danger">Pending</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-76</td>
+                                          <td>Tom</td>
+                                          <td>Tokyo</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-info">On hold</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-77</td>
+                                          <td>Cris</td>
+                                          <td>Tokyo</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-warning">Open</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-78</td>
+                                          <td>Tim</td>
+                                          <td>Italy</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-success">Closed</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-79</td>
+                                          <td>Jack</td>
+                                          <td>Tokyo</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-danger">Pending</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>JB-80</td>
+                                          <td>Tony</td>
+                                          <td>Germany</td>
+                                          <td>150,000</td>
+                                          <td>693032040</td>
+                                          <td>
+                                            <label class="badge rounded-btn badge-info">On hold</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <a class="btn btn-dark" href="../setting/admin-profile.html">
+                                              <i class="ti-eye text-primary"></i>Edit
+                                            </a>
+                                            <button onclick="showSwal('warning-message-and-cancel')" class="btn btn-dark">
+                                              <i class="ti-close text-danger"></i>Remove
+                                            </button>
+                                          </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        
+      </div>
+      <!-- main-panel ends -->
+      <!-- Modal starts -->
+      
+      <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel-2">Create User</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">First Name <span class="text-danger">*</span></label>
+                                <input id="firstname" class="form-control" name="firstname" type="text" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Last Name</label>
+                                <input id="lastname" class="form-control" name="firstname" type="text"  required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Email <span class="text-danger">*</span></label>
+                                <input id="email" class="form-control" name="email" type="email"  required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Password<span class="text-danger">*</span></label>
+                                <input id="password" class="form-control" name="password" type="password"  required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Confirm Password <span class="text-danger">*</span></label>
+                                <input  id="confirm_password" class="form-control" name="confirm_password" type="password" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Country</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                          
+                            <div class="form-group">
+                                <label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
+                                <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Phone </label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Department <span class="text-danger">*</span></label>
+                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-7-xbx6" tabindex="-1"
+                                    aria-hidden="true" required>
+                                    <option data-select2-id="select2-data-9-9gmg">Select Department</option>
+                                    <option>Web Development</option>
+                                    <option>IT Management</option>
+                                    <option>Marketing</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Designation <span class="text-danger">*</span></label>
+                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-10-egm7"
+                                    tabindex="-1" aria-hidden="true" required>
+                                    <option data-select2-id="select2-data-12-gap6">Select Designation</option>
+                                    <option>Web Designer</option>
+                                    <option>Web Developer</option>
+                                    <option>Android Developer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-section">
+                      <button class="btn btn-primary submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button onclick="showSwal('success-message')" type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../../../../vendors/chart.js/Chart.min.js"></script>
+  <script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../../../vendors/progressbar.js/progressbar.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../../../js/off-canvas.js"></script>
+  <script src="../../../../js/hoverable-collapse.js"></script>
+  <script src="../../../../js/template.js"></script>
+  <script src="../../../../js/settings.js"></script>
+  <script src="../../../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- Custom js for this page-->
+  <script src="../../../../js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="../../../../js/dashboard.js"></script>
+  <script src="../../../../js/Chart.roundedBarCharts.js"></script>
+  <script src="../../../../js/modal-demo.js"></script>
+  <script src="../../../../js/alerts.js"></script>
+  <script src="../../../../js/avgrund.js"></script>
+  <script src="../../../../js/toastDemo.js"></script>
+  <script src="../../../../vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
+  <script src="../../../../vendors/sweetalert/sweetalert.min.js"></script>
+  <script src="../../../../vendors/jquery.avgrund/jquery.avgrund.min.js"></script>
+  <!-- Custom js for this page-->
+  <script src="../../../../js/form-validation.js"></script>
+  <script src="../../../../js/bt-maxLength.js"></script>
+  <!-- End custom js for this page-->
+  <!-- End custom js for this page-->
+  <!-- Custom js for this page-->
+  <script src="../../../../js/data-table.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+</html>
+
