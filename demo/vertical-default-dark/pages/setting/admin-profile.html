@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Easy Manage</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../../../vendors/feather/feather.css">
+    <link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../../../../vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="../../../../vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../../../css/vertical-layout-dark/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../../../images/favicon.png" />
+</head>
+
+<body class="with-welcome-text">
+    <div class="container-scroller">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+                <div class="me-3">
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button"
+                        data-bs-toggle="minimize">
+                        <span class="icon-menu"></span>
+                    </button>
+                </div>
+                <div>
+                    <a class="navbar-brand brand-logo" href="../../index.html">
+                        <img src="../../../../images/logo-dark.svg" alt="logo" />
+                    </a>
+                    <a class="navbar-brand brand-logo-mini" href="../../index.html">
+                        <img src="../../../../images/logo-mini.svg" alt="logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+                        <h1 class="welcome-text text-white fw-bold">Employee Profile</h1>
+                        <h3 class="welcome-sub-text">Individual Employee Profile</h3>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown"
+                            href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                            aria-labelledby="messageDropdown">
+                            <a class="dropdown-item py-3">
+                                <p class="mb-0 font-weight-medium float-left">Select category</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-item-content flex-grow py-2">
+                                    <p class="preview-subject ellipsis font-weight-medium text-light">Employees </p>
+                                    <p class="fw-light small-text mb-0">Get insights about your Employees</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-item-content flex-grow py-2">
+                                    <p class="preview-subject ellipsis font-weight-medium text-light">Leaves</p>
+                                    <p class="fw-light small-text mb-0">Get insights about your Leaves</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-item-content flex-grow py-2">
+                                    <p class="preview-subject ellipsis font-weight-medium text-light">Departments </p>
+                                    <p class="fw-light small-text mb-0">Get insights about your Departments</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-item-content flex-grow py-2">
+                                    <p class="preview-subject ellipsis font-weight-medium text-light">Salaries </p>
+                                    <p class="fw-light small-text mb-0">Get insights about your Salaries</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+                            <span class="input-group-addon input-group-prepend border-right">
+                                <span class="icon-calendar input-group-text calendar-icon"></span>
+                            </span>
+                            <input type="text" class="form-control">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <form class="search-form" action="#">
+                            <i class="icon-search"></i>
+                            <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown">
+                            <i class="icon-mail icon-lg"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                            aria-labelledby="countDropdown">
+                            <a href="email.html" class="dropdown-item py-3">
+                                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                                <span class="badge badge-pill badge-primary float-right">View all</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="email.html" class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="../../../../images/faces/face10.jpg" alt="image"
+                                        class="img-sm profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow py-2">
+                                    <p class="preview-subject ellipsis font-weight-medium text-light">Marian Garner </p>
+                                    <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                                </div>
+                            </a>
+                            <a href="email.html" class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="../../../../images/faces/face12.jpg" alt="image"
+                                        class="img-sm profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow py-2">
+                                    <p class="preview-subject ellipsis font-weight-medium text-light">David Grey </p>
+                                    <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                                </div>
+                            </a>
+                            <a href="email.html" class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="../../../../images/faces/face1.jpg" alt="image"
+                                        class="img-sm profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow py-2">
+                                    <p class="preview-subject ellipsis font-weight-medium text-light">Travis Jenkins
+                                    </p>
+                                    <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="icon-bell"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                            aria-labelledby="notificationDropdown">
+                            <a href="notification.html" class="dropdown-item py-3 border-bottom">
+                                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                                <span class="badge badge-pill badge-primary float-right">View all</span>
+                            </a>
+                            <a href="notification.html" class="dropdown-item preview-item py-3">
+                                <div class="preview-thumbnail">
+                                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject fw-normal text-light mb-1">Application Error</h6>
+                                    <p class="fw-light small-text mb-0"> Just now </p>
+                                </div>
+                            </a>
+                            <a href="notification.html" class="dropdown-item preview-item py-3">
+                                <div class="preview-thumbnail">
+                                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject fw-normal text-light mb-1">Settings</h6>
+                                    <p class="fw-light small-text mb-0"> Private message </p>
+                                </div>
+                            </a>
+                            <a href="notification.html" class="dropdown-item preview-item py-3">
+                                <div class="preview-thumbnail">
+                                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject fw-normal text-light mb-1">New user registration</h6>
+                                    <p class="fw-light small-text mb-0"> 2 days ago </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+                        <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="img-xs rounded-circle" src="../../../../images/faces/face8.jpg"
+                                alt="Profile image"> </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                            <div class="dropdown-header text-center">
+                                <img class="img-md rounded-circle" src="../../../../images/faces/face8.jpg"
+                                    alt="Profile image">
+                                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+                            </div>
+                            <a href="../settings/admin-profile.html" class="dropdown-item"><i
+                                    class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile
+                                <span class="badge badge-pill badge-danger">1</span></a>
+                            <a href="email.html" class="dropdown-item"><i
+                                    class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i>
+                                Messages</a>
+                            <a href="email.html" class="dropdown-item"><i
+                                    class="dropdown-item-icon icon-bell text-primary me-2"></i> Notification</a>
+                            <a href="home.html" class="dropdown-item"><i
+                                    class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-bs-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:../../partials/_settings-panel.html -->
+            <div id="right-sidebar" class="settings-panel">
+                <i class="settings-close ti-close"></i>
+                <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab"
+                            aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab"
+                            aria-controls="chats-section">CHATS</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="setting-content">
+                    <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel"
+                        aria-labelledby="todo-section">
+                        <div class="add-items d-flex px-3 mb-0">
+                            <form class="form w-100">
+                                <div class="form-group d-flex">
+                                    <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                                    <button type="submit" class="add btn btn-primary todo-list-add-btn"
+                                        id="add-task">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="list-wrapper px-3">
+                            <ul class="d-flex flex-column-reverse todo-list">
+                                <li>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Team review meeting at 3.00 PM
+                                        </label>
+                                    </div>
+                                    <i class="remove ti-close"></i>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Prepare for presentation
+                                        </label>
+                                    </div>
+                                    <i class="remove ti-close"></i>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Resolve all the low priority tickets due today
+                                        </label>
+                                    </div>
+                                    <i class="remove ti-close"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox" checked>
+                                            Schedule meeting for next week
+                                        </label>
+                                    </div>
+                                    <i class="remove ti-close"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox" checked>
+                                            Project review
+                                        </label>
+                                    </div>
+                                    <i class="remove ti-close"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+                        <div class="events pt-4 px-3">
+                            <div class="wrapper d-flex mb-2">
+                                <i class="ti-control-record text-primary me-2"></i>
+                                <span>Feb 11 2018</span>
+                            </div>
+                            <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+                            <p class="text-gray mb-0">build a js based app</p>
+                        </div>
+                        <div class="events pt-4 px-3">
+                            <div class="wrapper d-flex mb-2">
+                                <i class="ti-control-record text-primary me-2"></i>
+                                <span>Feb 7 2018</span>
+                            </div>
+                            <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+                            <p class="text-gray mb-0 ">Call Sarah Graves</p>
+                        </div>
+                    </div>
+                    <!-- To do section tab ends -->
+                    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+                        <div class="d-flex align-items-center justify-content-between border-bottom">
+                            <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+                            <small
+                                class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See
+                                All</small>
+                        </div>
+                        <ul class="chat-list">
+                            <li class="list active">
+                                <div class="profile"><img src="../../../../images/faces/face1.jpg" alt="image"><span
+                                        class="online"></span></div>
+                                <div class="info">
+                                    <p>Thomas Douglas</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">19 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="../../../../images/faces/face2.jpg" alt="image"><span
+                                        class="offline"></span></div>
+                                <div class="info">
+                                    <div class="wrapper d-flex">
+                                        <p>Catherine</p>
+                                    </div>
+                                    <p>Away</p>
+                                </div>
+                                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                                <small class="text-muted my-auto">23 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="../../../../images/faces/face3.jpg" alt="image"><span
+                                        class="online"></span></div>
+                                <div class="info">
+                                    <p>Daniel Russell</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">14 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="../../../../images/faces/face4.jpg" alt="image"><span
+                                        class="offline"></span></div>
+                                <div class="info">
+                                    <p>James Richardson</p>
+                                    <p>Away</p>
+                                </div>
+                                <small class="text-muted my-auto">2 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="../../../../images/faces/face5.jpg" alt="image"><span
+                                        class="online"></span></div>
+                                <div class="info">
+                                    <p>Madeline Kennedy</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">5 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="../../../../images/faces/face6.jpg" alt="image"><span
+                                        class="online"></span></div>
+                                <div class="info">
+                                    <p>Sarah Graves</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">47 min</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- chat tab ends -->
+                </div>
+            </div>
+            <!-- partial -->
+            <!-- partial:../../partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-category">Account</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">
+                            <i class="mdi mdi-account menu-icon"></i>
+                            <span class="menu-title">Admin</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../employee.html">
+                            <i class="mdi mdi-account-multiple menu-icon "></i>
+                            <span class="menu-title">Employee</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category">Applications</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps/email.html">
+                            <i class="menu-icon mdi mdi-email-outline"></i>
+                            <span class="menu-title">E-mail</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps/calendar.html">
+                            <i class="menu-icon mdi mdi-calendar"></i>
+                            <span class="menu-title">Calendar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps/todo.html">
+                            <i class="menu-icon mdi mdi-format-list-bulleted"></i>
+                            <span class="menu-title">Todo List</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps/projects.html">
+                            <i class="menu-icon mdi mdi-file"></i>
+                            <span class="menu-title">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps/notification.html">
+                            <i class="menu-icon mdi mdi-newspaper"></i>
+                            <span class="menu-title">notification</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category">Employee</li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <i class="menu-icon mdi mdi-account-multiple"></i>
+                            <span class="menu-title">Employee</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="../employees/all-employees.html">All
+                                        Employees</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="../employees/holidays.html">Holidays</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../employees/leaves.html">Leaves</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#payroll" aria-expanded="false"
+                            aria-controls="payroll">
+                            <i class="menu-icon mdi mdi-account-card-details"></i>
+                            <span class="menu-title">Payrolls</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="payroll">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="../payrolls/employee-salary.html">Employee Salary</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="../payrolls/payslip.html">Payslip</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../payrolls/payroll-item.html">Payroll
+                                        Items</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#report" aria-expanded="false"
+                            aria-controls="report">
+                            <i class="menu-icon mdi mdi-script"></i>
+                            <span class="menu-title">Report</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="report">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="../report/expenses.html">Expenses</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../report/invoices.html">Invoices</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../report/payroll.html">Payroll</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="../report/employee.html">Employees </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../report/payments.html">Payments</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../report/project.html">Project </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#jobs" aria-expanded="false"
+                            aria-controls="jobs">
+                            <i class="menu-icon mdi mdi-clipboard"></i>
+                            <span class="menu-title">Jobs</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="jobs">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="../jobs/all-jobs.html">All Jobs</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="../jobs/manage-jobs.html">Manage
+                                        Jobs</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="../jobs/job-applicants.html">Job
+                                        Applicants</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-category">Settings</li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#profile-setting" aria-expanded="false"
+                            aria-controls="profile-setting">
+                            <i class="menu-icon mdi mdi-card-text-outline"></i>
+                            <span class="menu-title">Profile</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="profile-setting">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="../setting/admin-profile.html">Admin
+                                        profile</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="../setting/employee-profile.html">Employee Profile</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#employee-setting" aria-expanded="false"
+                            aria-controls="employee-setting">
+                            <i class="menu-icon mdi mdi-account-box"></i>
+                            <span class="menu-title">Employee</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="employee-setting">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="../setting/leaves-setting.html">Leaves
+                                        Setting</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../setting/holiday-setting.html">Holidays
+                                        Setting</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../setting/email.html">
+                            <i class="menu-icon mdi mdi-email"></i>
+                            <span class="menu-title">Email</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- partial -->
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="email-wrapper wrapper">
+                        <div class="row">
+                            <div class="col-12">
+                              <div class="card">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-lg-4">
+                                      <div class="border-bottom text-center pb-4">
+                                        <img src="../../../../images/faces/face12.jpg" alt="profile" class="img-lg rounded-circle mb-3"/>
+                                        <div class="mb-3">
+                                          <h3>David Grey. H</h3>
+                                          <div class="d-flex align-items-center">
+                                            <h5 class="mb-0 me-2 text-muted">Canada</h5>
+                                            <select id="profile-rating" name="rating" autocomplete="off">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <p class="w-75 mx-auto mb-3">Bureau Oberhaeuser is a design bureau focused on Information- and Interface Design. </p>
+                                        <div class="d-flex justify-content-center">
+                                          <button class="btn btn-success me-1">Hire Me</button>
+                                          <button class="btn btn-success">Follow</button>
+                                        </div>
+                                      </div>
+                                      <div class="border-bottom py-4">
+                                        <p>Skills</p>
+                                        <div>
+                                          <label class="badge badge-outline-light mb-1">Chalk</label>
+                                          <label class="badge badge-outline-light mb-1">Hand lettering</label>
+                                          <label class="badge badge-outline-light mb-1">Information Design</label>
+                                          <label class="badge badge-outline-light mb-1">Graphic Design</label>
+                                          <label class="badge badge-outline-light mb-1">Web Design</label>  
+                                        </div>                                                               
+                                      </div>
+                                      <div class="border-bottom py-4">
+                                        <div class="d-flex mb-3">
+                                          <div class="progress progress-md flex-grow">
+                                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="55" style="width: 55%" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex">
+                                          <div class="progress progress-md flex-grow">
+                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="py-4">
+                                        <p class="clearfix">
+                                          <span class="float-left">
+                                            Status
+                                          </span>
+                                          <span class="float-right text-muted">
+                                            Active
+                                          </span>
+                                        </p>
+                                        <p class="clearfix">
+                                          <span class="float-left">
+                                            Phone
+                                          </span>
+                                          <span class="float-right text-muted">
+                                            006 3435 22
+                                          </span>
+                                        </p>
+                                        <p class="clearfix">
+                                          <span class="float-left">
+                                            Mail
+                                          </span>
+                                          <span class="float-right text-muted">
+                                            Jacod@testmail.com
+                                          </span>
+                                        </p>
+                                        <p class="clearfix">
+                                          <span class="float-left">
+                                            Facebook
+                                          </span>
+                                          <span class="float-right text-muted">
+                                            <a href="#">David Grey</a>
+                                          </span>
+                                        </p>
+                                        <p class="clearfix">
+                                          <span class="float-left">
+                                            Twitter
+                                          </span>
+                                          <span class="float-right text-muted">
+                                            <a href="#">@davidgrey</a>
+                                          </span>
+                                        </p>
+                                      </div>
+                                      <button class="btn btn-primary btn-block mb-2">Preview</button>
+                                    </div>
+                                    <div class="col-lg-8">
+                                      <div class="d-flex justify-content-between">
+                                        <div>
+                                          <button class="btn btn-outline-primary">Message</button>
+                                          <button class="btn btn-primary">Request</button>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4 py-2 border-top border-bottom">
+                                        <ul class="nav profile-navbar">
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                              <i class="ti-user"></i>
+                                              Info
+                                            </a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link active" href="#">
+                                              <i class="ti-receipt"></i>
+                                              Feed
+                                            </a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                              <i class="ti-calendar"></i>
+                                              Agenda
+                                            </a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                              <i class="ti-clip"></i>
+                                              Resume
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="profile-feed">
+                                        <div class="d-flex align-items-start profile-feed-item">
+                                          <img src="../../../../images/faces/face13.jpg" alt="profile" class="img-sm rounded-circle"/>
+                                          <div class="ms-4">
+                                            <h6>
+                                              Mason Beck
+                                              <small class="ms-4 text-muted"><i class="ti-time me-1"></i>10 hours</small>
+                                            </h6>
+                                            <p>
+                                              There is no better advertisement campaign that is low cost and also successful at the same time.
+                                            </p>
+                                            <p class="small text-muted mt-2 mb-0">
+                                              <span>
+                                                <i class="ti-star me-1"></i>4
+                                              </span>
+                                              <span class="ms-2">
+                                                <i class="ti-comment me-1"></i>11
+                                              </span>
+                                              <span class="ms-2">
+                                                <i class="ti-share"></i>
+                                              </span>
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-start profile-feed-item">
+                                          <img src="../../../../images/faces/face16.jpg" alt="profile" class="img-sm rounded-circle"/>
+                                          <div class="ms-4">
+                                            <h6>
+                                              Willie Stanley
+                                              <small class="ms-4 text-muted"><i class="ti-time me-1"></i>10 hours</small>
+                                            </h6>
+                                            <img src="../../../../images/samples/1280x768/12.jpg" alt="sample" class="rounded mw-100"/>                            
+                                            <p class="small text-muted mt-2 mb-0">
+                                              <span>
+                                                <i class="ti-star me-1"></i>4
+                                              </span>
+                                              <span class="ms-2">
+                                                <i class="ti-comment me-1"></i>11
+                                              </span>
+                                              <span class="ms-2">
+                                                <i class="ti-share"></i>
+                                              </span>
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-start profile-feed-item">
+                                          <img src="../../../../images/faces/face19.jpg" alt="profile" class="img-sm rounded-circle"/>
+                                          <div class="ms-4">
+                                            <h6>
+                                              Dylan Silva
+                                              <small class="ms-4 text-muted"><i class="ti-time me-1"></i>10 hours</small>
+                                            </h6>
+                                            <p>
+                                              When I first got into the online advertising business, I was looking for the magical combination 
+                                              that would put my website into the top search engine rankings
+                                            </p>
+                                            <img src="../../../../images/samples/1280x768/5.jpg" alt="sample" class="rounded mw-100"/>                                                        
+                                            <p class="small text-muted mt-2 mb-0">
+                                              <span>
+                                                <i class="ti-star me-1"></i>4
+                                              </span>
+                                              <span class="ms-2">
+                                                <i class="ti-comment me-1"></i>11
+                                              </span>
+                                              <span class="ms-2">
+                                                <i class="ti-share"></i>
+                                              </span>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+
+
+                <div class="row" style="padding: 1rem 2.5rem;">
+                    <div class="col-12 col-md-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Personal Information</h4>
+                                <!-- <div class="mail-list-container pt-4 pb-4 "> -->
+                                <div class="mail-list">
+                                    <div class="form-check">
+                                        <p> <span style="color: #0a58ca; padding-right:5rem;">Passport
+                                                No.</span>CMR1258741</p>
+                                    </div>
+                                </div>
+                                <div class="mail-list">
+                                    <div class="form-check">
+                                        <p> <span style="color: #0a58ca; padding-right:5.35rem;">Nationality:</span>
+                                            Cameroonian</p>
+                                    </div>
+                                </div>
+                                <div class="mail-list">
+                                    <div class="form-check">
+                                        <p> <span style="color: #0a58ca; padding-right:7rem;">Religion</span>Christian
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mail-list">
+                                    <div class="form-check">
+                                        <p> <span style="color: #0a58ca; padding-right:4.5rem;">Marital
+                                                status</span>Single</p>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <h4 class="card-title">Emergency Contact</h4>
+                                <div class="mail-list">
+                                    <div class="form-check">
+                                        <p> <span style="color: #0a58ca; padding-right:5rem;">Mother:</span> +237 672
+                                            941 309</p>
+                                    </div>
+                                </div>
+                                <div class="mail-list">
+                                    <div class="form-check">
+                                        <p> <span style="color: #0a58ca; padding-right:5.3rem;">Father:</span> +237 672
+                                            941 309</p>
+                                    </div>
+                                </div>
+                                <div class="mail-list">
+                                    <div class="form-check">
+                                        <p> <span style="color: #0a58ca; padding-right:5.5rem;">Sister:</span> +237 672
+                                            941 309</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Experience</h4>
+                                <div class="mt-5">
+                                    <div class="timeline">
+                                        <div class="timeline-wrapper timeline-wrapper-primary">
+                                            <div class="timeline-badge"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <h6 class="timeline-title">Expeience Gained</h6>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>Web Designer at Loremmm</p>
+                                                    <p>Mobile Developer at Starrs</p>
+                                                    <p>Network Engineer at Estce</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="timeline-wrapper timeline-inverted timeline-wrapper-info">
+                                            <div class="timeline-badge"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <h6 class="timeline-title">Education Information</h6>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>Primary Education: Loremmm</p>
+                                                    <p>Secondary Education: Lorem</p>
+                                                    <p>Higher Education: Loremmm</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content-wrapper ends -->
+
+                    <!-- partial -->
+                </div>
+
+            </div>
+
+
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../../../js/off-canvas.js"></script>
+    <script src="../../../../js/hoverable-collapse.js"></script>
+    <script src="../../../../js/template.js"></script>
+    <script src="../../../../js/settings.js"></script>
+    <script src="../../../../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../../../../js/calendar.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+
+</html>
