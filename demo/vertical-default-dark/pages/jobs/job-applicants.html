@@ -1056,99 +1056,75 @@
       
       <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel-2">Create User</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fw-bold text-white" id="exampleModalLabel-2">Create New Job Request</h3>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Employee Name <span class="text-danger">*</span></label>
+                                    <input id="firstname" class="form-control" name="firstname" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Post</label>
+                                    <input id="lastname" class="form-control" name="firstname" type="text"  required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Company <span class="text-danger">*</span></label>
+                                    <input id="email" class="form-control" name="email" type="email"  required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Role<span class="text-danger">*</span></label>
+                                    <input id="password" class="form-control" name="password" type="password"  required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Department <span class="text-danger">*</span></label>
+                                    <input  id="confirm_password" class="form-control" name="confirm_password" type="password" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Country</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                              
+                                <div class="form-group">
+                                    <label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
+                                    <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Phone </label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-section">
+                          <button class="btn btn-primary submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button onclick="showSwal('success-message')" type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">First Name <span class="text-danger">*</span></label>
-                                <input id="firstname" class="form-control" name="firstname" type="text" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Last Name</label>
-                                <input id="lastname" class="form-control" name="firstname" type="text"  required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Email <span class="text-danger">*</span></label>
-                                <input id="email" class="form-control" name="email" type="email"  required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Password<span class="text-danger">*</span></label>
-                                <input id="password" class="form-control" name="password" type="password"  required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Confirm Password <span class="text-danger">*</span></label>
-                                <input  id="confirm_password" class="form-control" name="confirm_password" type="password" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Country</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                          
-                            <div class="form-group">
-                                <label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
-                                <div class="cal-icon"><input class="form-control datetimepicker" type="text" placeholder="dd/mm/yyyy" required></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-form-label">Phone </label>
-                                <input class="form-control" type="text">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Department <span class="text-danger">*</span></label>
-                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-7-xbx6" tabindex="-1"
-                                    aria-hidden="true" required>
-                                    <option data-select2-id="select2-data-9-9gmg">Select Department</option>
-                                    <option>Web Development</option>
-                                    <option>IT Management</option>
-                                    <option>Marketing</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Designation <span class="text-danger">*</span></label>
-                                <select class="select select2-hidden-accessible" data-select2-id="select2-data-10-egm7"
-                                    tabindex="-1" aria-hidden="true" required>
-                                    <option data-select2-id="select2-data-12-gap6">Select Designation</option>
-                                    <option>Web Designer</option>
-                                    <option>Web Developer</option>
-                                    <option>Android Developer</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="submit-section">
-                      <button class="btn btn-primary submit-btn">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button onclick="showSwal('success-message')" type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
       </div>
       <!-- Modal Ends -->
